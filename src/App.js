@@ -1,18 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from '../src/Components/Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <table>
-        <tbody>
-        <tr>
-          <td><img src/></td>
-          <td>Cell 2</td>
-        </tr>
-        </tbody>
-      </table>
+      <Header/>
     </div>
   );
 }
