@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import pic from './movieIcon.jpg'
 
 
 class Header extends React.Component {
@@ -9,8 +10,8 @@ class Header extends React.Component {
                 <table>
                     <tbody>
                     <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
+                        <td className="pic"><img src={pic}/></td>
+                        <td className="name"><h1>Search For Your Movies</h1></td>
                     </tr>
                     </tbody>
                 </table>
