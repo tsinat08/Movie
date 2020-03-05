@@ -127,8 +127,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1580" />
-    <option name="y" value="85" />
+    <option name="x" value="1030" />
+    <option name="y" value="95" />
     <option name="width" value="2275" />
     <option name="height" value="2075" />
   </component>
@@ -228,7 +228,7 @@
       <workItem from="1582422594287" duration="1499000" />
       <workItem from="1583371378522" duration="2145000" />
       <workItem from="1583377206212" duration="713000" />
-      <workItem from="1583447469599" duration="2090000" />
+      <workItem from="1583447469599" duration="2725000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1582248953842</created>
@@ -307,15 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583449377772</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="set Movie">
+      <created>1583449594401</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1583449594401</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19188000" />
+    <option name="totallyTimeSpent" value="19823000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="632" y="34" width="910" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="413" y="39" width="910" height="830" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22171429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
