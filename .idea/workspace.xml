@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/Search.css" afterDir="false" />
-    </list>
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -128,7 +125,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1645" />
-    <option name="y" value="147" />
+    <option name="y" value="145" />
     <option name="width" value="2275" />
     <option name="height" value="2075" />
   </component>
@@ -193,7 +190,7 @@
       <updated>1582110941513</updated>
       <workItem from="1582110945714" duration="10928000" />
       <workItem from="1582420677947" duration="1813000" />
-      <workItem from="1582422594287" duration="1015000" />
+      <workItem from="1582422594287" duration="1499000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1582248953842</created>
@@ -244,15 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582422489457</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="end for search">
+      <created>1582423714638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582423714638</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13756000" />
+    <option name="totallyTimeSpent" value="14240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="658" y="59" width="910" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22171429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -279,7 +282,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="end for search" />
-    <option name="LAST_COMMIT_MESSAGE" value="end for search" />
+    <MESSAGE value="set Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="set Search" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
