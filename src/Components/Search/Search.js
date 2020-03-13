@@ -12,7 +12,7 @@ class Search extends React.Component{
         return(
             <div className="Search">
                 <div className="input">
-                     <input  placeholder="Search for movie or tv show" onChange={props.handleChange}/>
+                     <input  placeholder="Search for movie or tv show" onChange={this.handleChange}/>
                 </div>
                 <div className="SearchButton">
                        <button >SEARCH</button>

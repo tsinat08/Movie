@@ -13,7 +13,7 @@ class App extends React.Component{
         this.state={
            movies: []
         }
-        this.searchMovies=this.searchMovies.bind(this)
+
     }
     render() {
         return (
