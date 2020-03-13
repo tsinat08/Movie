@@ -2,10 +2,21 @@ import React from 'react';
 import './Search.css';
 
 class Search extends React.Component{
+    constructor(props){
+        super(props);
+
+    }
+
+
     render() {
         return(
             <div className="Search">
-                <input placeholder="Search for movie or tv show" />
+                <div className="input">
+                     <input  placeholder="Search for movie or tv show" onChange={props.handleChange}/>
+                </div>
+                <div className="SearchButton">
+                       <button >SEARCH</button>
+                </div>
             </div>
         )
     }

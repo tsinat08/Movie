@@ -6,7 +6,7 @@ class Movie extends React.Component{
     render() {
         return(
             <div className="Movie">
-                <h2>Movies</h2>
+                <h2></h2>
 
             </div>
         )
