@@ -7,11 +7,6 @@ class MovieList extends React.Component{
         return(
             <div className='MovieList'>
                 <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
             </div>
         )
     }
