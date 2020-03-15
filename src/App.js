@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from '../src/Components/Header/Header'
 import Search from '../src/Components/Search/Search'
-import Movie from "./Components/Movie/Movie";
+import MovieList from "./Components/MovieList/MovieList";
 import Movies from './util/movies'
 
 
@@ -20,7 +20,7 @@ class App extends React.Component{
             <div className="App">
                 <Header/>
                 <Search searchMovies={this.searchMovies}/>
-                <Movie/>
+                <MovieList/>
             </div>
         );
     }

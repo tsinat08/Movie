@@ -1,23 +1,31 @@
-.Movie{
-    width: 100%;
-    height: 950px;
-    overflow-y: scroll;
-    padding: .88rem;
-    background-color: white;
-    box-shadow: 0 4px 2px 2px #fff;
-    color: #000;
+.Movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16.66rem;
+    margin: 0 .5rem 2.3rem .5rem;
 }
 
-
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+.Movie .image-container {
+    height: 16.66rem;
+    margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1020px) {
-    .SearchResults {
-        width: 90%;
-        margin-bottom: 2rem;
-    }
+.Movie h2 {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Business-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.Business-overview h3 {
+    color: #CCA353;
+    font-weight: 600;
 }
 
