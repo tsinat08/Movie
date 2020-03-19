@@ -1,21 +1,21 @@
-.Search {
+.search {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.input {
+.search input{
     width: 99.5%;
     padding: .66rem 1rem;
     margin-right: 2.22rem;
     border: 1px solid;
     border-radius: 4px;
     font-size: 25px;
-    color: #ffffff;
+    color: white;
     font-weight: 500;
-    background-color: rgb(158, 101, 105);
+    background-color: rgb(191, 162, 164);
 
 }
-.SearchButton {
+.search button {
     position: absolute;
     right: 16%;
     cursor: pointer;
@@ -31,6 +31,6 @@
     font-weight: 500;
 }
 
-.SearchButton:hover {
+.search button:hover {
     background-color: rgba(108, 1, 8, 7);;
 }

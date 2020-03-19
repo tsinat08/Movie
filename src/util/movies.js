@@ -5,7 +5,6 @@ const Movies = {
         return fetch (`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${term}`)
             .then(data => data.json())
             .then(data => {
-                console.log(data);
                 this.searchMovies({movies: [... data.results]})
             })
     }

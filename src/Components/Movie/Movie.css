@@ -1,30 +1,37 @@
-.Movie {
+.movie {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 16.66rem;
+    justify-content: flex-start;
+    width: 100%;
     margin: 0 .5rem 2.3rem .5rem;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.Movie .image-container {
-    height: 16.66rem;
-    margin-bottom: 1rem;
+.image-container {
+    width: 50%;
 }
 
-.Movie h2 {
+.image-container img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.movie h2 {
     margin-bottom: .5rem;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.Business-overview{
+
+.movie-overview {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: left;
 }
 
-.Business-overview h3 {
+.movie-overview h3 {
     color: #CCA353;
     font-weight: 600;
 }

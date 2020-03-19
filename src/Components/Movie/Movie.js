@@ -9,12 +9,12 @@ const movie={
 class Movie extends React.Component{
     render() {
         return(
-            <div className="Movie">
+            <div className="movie">
                 <div className="image-container">
                     <img src={movie.imageSrc} alt=''/>
                 </div>
-                <h2>{movie.title}</h2>
                 <div className="movie-overview">
+                    <h2>{movie.title}</h2>
                     <h3>{movie.overview}</h3>
                 </div>
             </div>

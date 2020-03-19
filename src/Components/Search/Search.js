@@ -10,13 +10,9 @@ class Search extends React.Component{
 
     render() {
         return(
-            <div className="Search">
-                <div className="input">
+            <div className="search">
                      <input  placeholder="Search for movie or tv show" onChange={this.handleChange}/>
-                </div>
-                <div className="SearchButton">
-                       <button >SEARCH</button>
-                </div>
+                     <button >SEARCH</button>
             </div>
         )
     }
