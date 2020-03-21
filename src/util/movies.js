@@ -1,4 +1,4 @@
-const apiKey=''
+const apiKey='';
 
 const Movies = {
     searchMovies (term){
@@ -10,4 +10,4 @@ const Movies = {
     }
 }
 
-export default Movies
+export default Movies;
