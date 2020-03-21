@@ -1,13 +1,10 @@
 import React from 'react';
 import './Movie.css';
 
-const movie={
-    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-    title:'Batman',
-    overview: 'Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman'
-}
+
 class Movie extends React.Component{
     render() {
+        const {movie}=this.props;
         return(
             <div className="movie">
                 <div className="image-container">

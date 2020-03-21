@@ -6,12 +6,11 @@ class MovieList extends React.Component{
     render() {
         return(
             <div className='MovieList'>
-                <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
-                <Movie/>
+                {
+                    this.props.movies.map(movie=>{
+                        return <Movie movie={movie}/>
+                    })
+                }
             </div>
         )
     }
