@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Header from '../src/Components/Header/Header'
 import Search from '../src/Components/Search/Search'
@@ -16,9 +15,13 @@ class App extends React.Component{
         this.searchDatabase=this.searchDatabase.bind(this)
     }
     searchDatabase(term) {
-        Movies.searchMovies(term).then((movies) => {
-            this.setState({movies: movies})
-        })
+             Movies.searchMovies(term).then(data => data.json())
+                    .then(data => {
+                        if(data.results){
+                            console.log("testing", data.results);
+                            this.setState({movies: data.results});
+                        }
+                    })
     }
     render() {
         return (
