@@ -18,7 +18,6 @@ class App extends React.Component{
              Movies.searchMovies(term).then(data => data.json())
                     .then(data => {
                         if(data.results){
-                            console.log("testing", data.results);
                             this.setState({movies: data.results});
                         }
                     })
@@ -26,8 +25,10 @@ class App extends React.Component{
     render() {
         return (
             <div className="App">
-                <Header/>
+                <div className="headers">
+                    <Header/>
                 <Search searchDatabase={this.searchDatabase}/>
+                </div>
                 <MovieList movies={this.state.movies}/>
             </div>
         );

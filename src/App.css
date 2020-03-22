@@ -1,8 +1,7 @@
 
-
 .App {
   height: 100%;
-  padding: 0 17% 10% 17%;
+  /*padding: 0 17% 10% 17%;*/
   /*background-image: url("background_photo_desktop.jpg");*/
   background-size: cover;
   background-position: center;
@@ -10,6 +9,14 @@
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
 
+}
+.headers{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 158px;
 }
 
 
