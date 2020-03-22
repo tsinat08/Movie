@@ -38,7 +38,7 @@ class Movie extends React.Component{
                          alt={`${this.props.results.title}`}/>
                 </div>
                 <div className="movie-overview">
-                    <h2>{this.props.results.title}</h2>
+                    <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
                     <h3>{this.handleOverview()}</h3>
                 </div>
             </div>

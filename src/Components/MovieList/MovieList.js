@@ -7,11 +7,17 @@ class MovieList extends React.Component{
 
         return(
             <div className='MovieList'>
-                {
+                {   this.props.movies && this.props.movies.length ?
                     this.props.movies.map(movie=>{
-                        return <Movie key={movie.id} results={movie}/>
-                    })
+                        return <Movie key={movie.id} results={movie} tv='false'/>
+                    }): null
                 }
+                {   this.props.tv && this.props.tv.length ?
+                    this.props.tv.map(movie=>{
+                        return <Movie key={movie.id} results={movie} tv='true'/>
+                    }): null
+                }
+
             </div>
         )
     }
