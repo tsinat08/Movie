@@ -17,6 +17,7 @@ class App extends React.Component{
     searchDatabase(term) {
              Movies.searchMovies(term).then(data => data.json())
                     .then(data => {
+                        console.log(data.results)
                         if(data.results){
                             this.setState({movies: data.results});
                         }

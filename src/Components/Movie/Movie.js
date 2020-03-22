@@ -8,18 +8,27 @@ class Movie extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            imageSrc:this.props.results.poster_path
+            imageSrc:this.props.results.poster_path,
+            overview:this.props.results.overview
 
         }
         this.handleImage=this.handleImage.bind(this);
     }
 
-    handleImage(src){
+    handleImage(){
             if (this.state.imageSrc === null) {
                 return noImage
             }else {
                 return (`https://image.tmdb.org/t/p/w185_and_h278_bestv2${this.props.results.poster_path}`)
             }
+    }
+
+    handleOverview(){
+        if(this.state.overview === ""){
+            return 'We do not have an overview for this movie'
+        }else{
+            return this.state.overview;
+        }
     }
     render() {
         const {results}=this.props;
@@ -31,7 +40,7 @@ class Movie extends React.Component{
                 </div>
                 <div className="movie-overview">
                     <h2>{results.title}</h2>
-                    <h3>{results.overview}</h3>
+                    <h3>{this.handleOverview()}</h3>
                 </div>
             </div>
         )
