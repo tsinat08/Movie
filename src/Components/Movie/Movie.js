@@ -31,15 +31,14 @@ class Movie extends React.Component{
         }
     }
     render() {
-        const {results}=this.props;
         return(
             <div className="movie">
                 <div className="image-container">
                     <img src={this.handleImage()}
-                         alt={`${results.title}`}/>
+                         alt={`${this.props.results.title}`}/>
                 </div>
                 <div className="movie-overview">
-                    <h2>{results.title}</h2>
+                    <h2>{this.props.results.title}</h2>
                     <h3>{this.handleOverview()}</h3>
                 </div>
             </div>
