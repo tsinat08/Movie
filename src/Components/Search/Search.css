@@ -30,7 +30,11 @@
     color: #fff;
     font-weight: 500;
 }
-
 .search button:hover {
     background-color: rgba(108, 1, 8, 7);;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
 }

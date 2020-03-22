@@ -24,7 +24,7 @@ class Search extends React.Component{
     render() {
         return(
             <div className="search">
-                     <input  placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
+                     <input placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
                      <button onClick={this.handleSearch}>SEARCH</button>
             </div>
         )

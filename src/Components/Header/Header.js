@@ -11,7 +11,7 @@ class Header extends React.Component {
                     <tbody>
                     <tr>
                         <td className="pic"><img src={pic}/></td>
-                        <td className="name"><h1>Search For Your Movies</h1></td>
+                        <td className="name"><h1>Search For A Movies</h1></td>
                     </tr>
                     </tbody>
                 </table>
