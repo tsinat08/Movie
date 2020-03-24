@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/movies.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,7 +67,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
+            <state relative-caret-position="68">
               <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
@@ -232,7 +229,7 @@
       <workItem from="1584803099387" duration="8892000" />
       <workItem from="1584840756175" duration="9728000" />
       <workItem from="1584908768965" duration="4976000" />
-      <workItem from="1584936209640" duration="246000" />
+      <workItem from="1584936209640" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1582248953842</created>
@@ -521,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584912557574</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add TV search">
+      <created>1584936644935</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1584936644935</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82622000" />
+    <option name="totallyTimeSpent" value="82912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,7 +542,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49810606" visible="true" weight="0.11690885" />
       <window_info id="Structure" order="1" sideWeight="0.50189394" side_tool="true" weight="0.11690885" />
@@ -747,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="68">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
