@@ -7,6 +7,7 @@ import {Movies} from './util/movies';
 import {TV} from './util/movies';
 
 
+
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -18,19 +19,19 @@ class App extends React.Component{
     }
     searchDatabase(term) {
         Movies.searchMovies(term).then(data => data.json())
-                    .then(data => {
-                        console.log(data.results)
-                        if(data.results){
-                            this.setState({movies: data.results});
-                        }
-                    });
+            .then(data => {
+                if(data.results){
+                    this.setState({movies: data.results});
+                }
+            });
         TV.searchTV(term).then(data => data.json())
             .then(data => {
-                console.log(data.results)
                 if(data.results){
                     this.setState({tv: data.results});
                 }
             });
+
+
     }
     render() {
         return (

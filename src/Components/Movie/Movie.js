@@ -10,11 +10,18 @@ class Movie extends React.Component{
         this.state={
             imageSrc:this.props.results.poster_path,
             overview:this.props.results.overview
-
         }
-        this.handleImage=this.handleImage.bind(this);
     }
 
+    handleResult(){
+        if (this.state.results === ""){
+            console.log('1res')
+            return 'There are no movies that matched your query'
+        }else{
+            console.log('2res')
+            return this.state.results;
+        }
+    }
     handleImage(){
             if (this.state.imageSrc === null) {
                 return noImage
@@ -30,10 +37,17 @@ class Movie extends React.Component{
             return this.state.overview;
         }
     }
+
     render() {
+        const {results}=this.props;
+        console.log(this.props)
+        if (results === null){
+            console.log("at render")
+            this.handleResult();
+        }
         return(
             <div className="movie">
-                <div className="image-container">
+                <div className="image-container" >
                     <img src={this.handleImage()}
                          alt={`${this.props.results.title}`}/>
                 </div>

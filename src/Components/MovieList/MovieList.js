@@ -7,6 +7,7 @@ class MovieList extends React.Component{
 
         return(
             <div className='MovieList'>
+
                 {   this.props.movies && this.props.movies.length ?
                     this.props.movies.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='false'/>
