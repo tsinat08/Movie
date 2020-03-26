@@ -53,6 +53,7 @@ class Movie extends React.Component{
                 </div>
                 <div className="movie-overview">
                     <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
+                    <h3></h3>
                     <h3>{this.handleOverview()}</h3>
                 </div>
             </div>
