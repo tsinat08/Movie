@@ -41,7 +41,11 @@ class Movie extends React.Component{
         let date = new Date(this.props.results.release_date)
         return date.getFullYear()
     }
+    handleRating(){
+       return ((this.props.results.vote_average * 10) + "%");
 
+
+    }
     render() {
         return(
             <div className="movie">
@@ -50,6 +54,7 @@ class Movie extends React.Component{
                          alt={`${this.props.results.title}`}/>
                 </div>
                 <div className="movie-overview">
+                    <div className="bar" style={{width: this.handleRating()}}> {'   Voting Average: '}{this.handleRating()} </div>
                     <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
                     <h4>{this.handleDate()} </h4>
                     <h3>{this.handleOverview()}</h3>
