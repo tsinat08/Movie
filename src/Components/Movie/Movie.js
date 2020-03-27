@@ -37,9 +37,9 @@ class Movie extends React.Component{
             return this.state.overview;
         }
     }
-    handleDate(){
-        let a= new Date(this.props.results.release_date)
-        console.log (a);
+    handleDate() {
+        let date = new Date(this.props.results.release_date)
+        return date.getFullYear()
     }
 
     render() {
@@ -51,7 +51,7 @@ class Movie extends React.Component{
                 </div>
                 <div className="movie-overview">
                     <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
-                    <h4>{this.handleDate()} {this.props.results.release_date}</h4>
+                    <h4>{this.handleDate()} </h4>
                     <h3>{this.handleOverview()}</h3>
                 </div>
             </div>
