@@ -18,14 +18,21 @@ class Search extends React.Component{
 
     handleSearch(event){
         this.props.searchDatabase(this.state.term);
-        event.preventDefault();
+        // event.preventDefault();
     }
+
+    handleKey = (e) => {
+        if(e.which === 13) {
+            this.handleSearch();
+        }
+    }
+
 
     render() {
         return(
             <div className="search">
-                     <input placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
-                     <button onClick={this.handleSearch}>SEARCH</button>
+                     <input onKeyPress={this.handleKey} placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
+                     <button onClick={this.handleSearch} >SEARCH</button>
             </div>
         )
     }
