@@ -14,15 +14,6 @@ class Movie extends React.Component{
         }
     }
 
-    handleResult(){
-        if (this.state.results === ""){
-            console.log('1res')
-            return 'There are no movies that matched your query'
-        }else{
-            console.log('2res')
-            return this.state.results;
-        }
-    }
     handleImage(){
             if (this.state.imageSrc === null) {
                 return noImage
@@ -42,7 +33,7 @@ class Movie extends React.Component{
         return this.props.results.release_date ? moment(this.props.results.release_date).format("LL"): null
     }
     handleRating(){
-       return ((this.props.results.vote_average * 10) + "%");
+        return this.props.results.vote_average > 0 ?(this.props.results.vote_average * 10) + "%" : null
 
 
     }
@@ -56,7 +47,7 @@ class Movie extends React.Component{
                 <div className="details">
                     <div className='title'>
                         <div className="bar"
-                             style={{width: this.handleRating()}}>{`${this.handleRating()} Viewers Rating`}</div>
+                             style={{width: this.handleRating()}}>{this.props.results.vote_average > 0 ? `${this.handleRating()} Viewers Rating` : null}</div>
                         <a>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </a>
                         <span>{this.handleDate()} </span>
                     </div>
