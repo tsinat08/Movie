@@ -1,4 +1,4 @@
-const apiKey='56b205b08ae40f18ccbbdc9';
+const apiKey='';
 
 export const Movies = {
     searchMovies (term){

@@ -39,7 +39,7 @@ class Movie extends React.Component{
         }
     }
     handleDate() {
-        return this.props.results.release_date ? moment(this.props.results.release_date).format("MMM Do YYYY"): null
+        return this.props.results.release_date ? moment(this.props.results.release_date).format("MMM Do, YYYY"): null
     }
     handleRating(){
        return ((this.props.results.vote_average * 10) + "%");
@@ -53,10 +53,12 @@ class Movie extends React.Component{
                     <img src={this.handleImage()}
                          alt={`${this.props.results.title}`}/>
                 </div>
-                <div className="movie-overview">
-                    <div className="bar" style={{width: this.handleRating()}}> {'   Voting Average: '}{this.handleRating()} </div>
-                    <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
-                    <h4>{'Relase Date: '}{this.handleDate()} </h4>
+                <div className="details">
+                    <div className='title'>
+                        <div className="bar" style={{width: this.handleRating()}}>{this.handleRating()}</div>
+                        <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
+                        <span>{this.handleDate()} </span>
+                    </div>
                     <p>{this.handleOverview()}</p>
                 </div>
             </div>
