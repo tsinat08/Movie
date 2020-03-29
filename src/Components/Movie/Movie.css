@@ -8,27 +8,36 @@
 }
 
 .image-container {
-    width: 200px;
+    width: 135px;
 }
 
 .image-container img{
-    width: 200px;
-    height: 278px;
-
+    min-width: 94px;
+    width: 125px;
+    height: 200px;
 }
 
-.movie h2 {
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    overflow: hidden;
+}
+
+.title a{
     width: 100%;
     display: block;
     font-weight: 600;
     font-size: 2.0em;
 
 }
-.movie h4 {
+.title span {
     width: 100%;
     display: block;
     font-weight: 600;
     font-size: 1.3em;
+    white-space: nowrap;
+    color: #999;
 
 }
 .details {
@@ -40,16 +49,20 @@
     width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    align-content: center;
+
 }
 
 .details p {
     word-wrap: break-word;
     white-space: normal;
     color: #4d4d4d;
-    font-size: 1.2em;
     line-height: 1.2em;
-    margin-top: 30px;
+    font-size: 1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
 }
 
 .bar{

@@ -39,7 +39,7 @@ class Movie extends React.Component{
         }
     }
     handleDate() {
-        return this.props.results.release_date ? moment(this.props.results.release_date).format("MMM Do, YYYY"): null
+        return this.props.results.release_date ? moment(this.props.results.release_date).format("LL"): null
     }
     handleRating(){
        return ((this.props.results.vote_average * 10) + "%");
@@ -47,22 +47,23 @@ class Movie extends React.Component{
 
     }
     render() {
-        return(
+        return (
             <div className="movie">
-                <div className="image-container" >
+                <div className="image-container">
                     <img src={this.handleImage()}
                          alt={`${this.props.results.title}`}/>
                 </div>
                 <div className="details">
                     <div className='title'>
-                        <div className="bar" style={{width: this.handleRating()}}>{this.handleRating()}</div>
-                        <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
+                        <div className="bar"
+                             style={{width: this.handleRating()}}>{`${this.handleRating()} Viewers Rating`}</div>
+                        <a>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </a>
                         <span>{this.handleDate()} </span>
                     </div>
                     <p>{this.handleOverview()}</p>
                 </div>
             </div>
-        )
+        );
     }
 }
 

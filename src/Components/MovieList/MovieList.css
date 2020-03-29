@@ -1,6 +1,9 @@
-.MovieList{
+.MovieList {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 15rem 15%;
+    margin: 15rem 15% 15rem 30%;;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start
 }
