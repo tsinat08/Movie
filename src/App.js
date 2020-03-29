@@ -13,21 +13,23 @@ class App extends React.Component{
         super(props);
         this.state={
             movies:[],
-            tv:[]
+            tv:[],
+            loading: true
         }
         this.searchDatabase=this.searchDatabase.bind(this)
     }
+
     searchDatabase(term) {
         Movies.searchMovies(term).then(data => data.json())
             .then(data => {
                 if(data.results){
-                    this.setState({movies: data.results});
+                    this.setState({movies: data.results, loading: false});
                 }
             });
         TV.searchTV(term).then(data => data.json())
             .then(data => {
                 if(data.results){
-                    this.setState({tv: data.results});
+                    this.setState({tv: data.results, loading: false});
                 }
             });
 
@@ -38,9 +40,9 @@ class App extends React.Component{
             <div className="App">
                 <div className="headers">
                     <Header/>
-                <Search searchDatabase={this.searchDatabase}/>
+                    <Search searchDatabase={this.searchDatabase}/>
                 </div>
-                <MovieList movies={this.state.movies} tv={this.state.tv}/>
+                <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
             </div>
         );
     }

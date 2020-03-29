@@ -1,6 +1,7 @@
 import React from 'react';
 import './Movie.css';
-import noImage from './no image.png'
+import noImage from './noImage.png'
+import moment from 'moment'
 
 
 class Movie extends React.Component{
@@ -38,8 +39,7 @@ class Movie extends React.Component{
         }
     }
     handleDate() {
-        let date = new Date(this.props.results.release_date)
-        return date.getFullYear()
+        return this.props.results.release_date ? moment(this.props.results.release_date).format("MMM Do YYYY"): null
     }
     handleRating(){
        return ((this.props.results.vote_average * 10) + "%");
@@ -56,8 +56,8 @@ class Movie extends React.Component{
                 <div className="movie-overview">
                     <div className="bar" style={{width: this.handleRating()}}> {'   Voting Average: '}{this.handleRating()} </div>
                     <h2>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h2>
-                    <h4>{this.handleDate()} </h4>
-                    <h3>{this.handleOverview()}</h3>
+                    <h4>{'Relase Date: '}{this.handleDate()} </h4>
+                    <p>{this.handleOverview()}</p>
                 </div>
             </div>
         )
