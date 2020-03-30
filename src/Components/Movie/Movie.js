@@ -33,7 +33,7 @@ class Movie extends React.Component{
         return this.props.results.release_date ? moment(this.props.results.release_date).format("LL"): null
     }
     handleRating(){
-        return this.props.results.vote_average > 0 ?(this.props.results.vote_average * 10) + "%" : null
+        return this.props.results.vote_average * 10 + "%"
 
 
     }
