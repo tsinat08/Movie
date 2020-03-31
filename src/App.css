@@ -1,23 +1,36 @@
 
 .App {
   height: 100%;
+  width: 100%;
   /*padding: 0 17% 10% 17%;*/
   /*background-image: url("background_photo_desktop.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Work Sans', sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 500;
 
 }
 .headers{
-  position: fixed;
+  position: inherit;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  height: 158px;
+  height: 200px;
 }
+
+.list {
+  max-width: 1300px;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 30px 40px 30px 40px;
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
 
 
 

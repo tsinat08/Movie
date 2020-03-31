@@ -3,6 +3,7 @@ import './App.css';
 import Header from '../src/Components/Header/Header';
 import Search from '../src/Components/Search/Search';
 import MovieList from "./Components/MovieList/MovieList";
+import SeacrchList from '../src/Components/SearchResults/SearchResults';
 import {Movies} from './util/movies';
 import {TV} from './util/movies';
 
@@ -42,7 +43,10 @@ class App extends React.Component{
                     <Header/>
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
-                <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
+                <div className='list'>
+                    <SeacrchList/>
+                    <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
+                </div>
             </div>
         );
     }

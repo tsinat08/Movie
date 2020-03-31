@@ -1,0 +1,35 @@
+.SearchResults  {
+    box-shadow: 6px 4px 2px 2px #bfa2a4;
+    min-width: 250px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SearchResults h3{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0;
+    font-weight: 600;
+    padding: 20px;
+    color: #fff;
+}
+
+.SearchResults ul{
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+
+/*::-webkit-scrollbar {*/
+/*    width: 0px;*/
+/*    background: transparent;*/
+/*}*/
+
+/*@media only screen and (max-width: 1020px) {*/
+/*    .SearchResults {*/
+/*        width: 90%;*/
+/*        margin-bottom: 2rem;*/
+/*    }*/
+/*}*/

@@ -20,7 +20,6 @@ class Search extends React.Component{
         this.props.searchDatabase(this.state.term);
 
     }
-
     handleKey = (e) => {
         if(e.which === 13) {
             this.handleSearch();
