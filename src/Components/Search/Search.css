@@ -1,12 +1,13 @@
 .search {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .search input{
-    width: 99.5%;
-    padding: .66rem 15%;
-    margin-right: 2.22rem;
+    /*width: 100%;*/
+    padding: 0.66rem 24% 0.66rem 10%;;
+    /*margin-right: 2.22rem;*/
     border: 1px solid;
     border-radius: 4px;
     font-size: 25px;

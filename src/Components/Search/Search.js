@@ -32,7 +32,7 @@ class Search extends React.Component{
         return(
             <div className="search">
                      <input onKeyPress={this.handleKey} placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
-                     {/*<button onClick={this.handleSearch} >SEARCH</button>*/}
+                     <button onClick={this.handleSearch} >SEARCH</button>
             </div>
         )
     }
