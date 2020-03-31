@@ -26,16 +26,13 @@ class App extends React.Component{
         Movies.searchMovies(term).then(data => data.json())
             .then(data => {
                 if(data.results){
-                    this.setState({movies: data.results, loading: false});
-                    this.setState({moviesCount: data.total_results})
-                    console.log(this.state.moviesCount)
+                    this.setState({movies: data.results, moviesCount: data.total_results, loading: false});
                 }
             });
         TV.searchTV(term).then(data => data.json())
             .then(data => {
                 if(data.results){
-                    this.setState({tv: data.results, loading: false});
-                    this.setState({tvCount: data.total_results})
+                    this.setState({tv: data.results, tvCount: data.total_results, loading: false});
                 }
             });
     }
