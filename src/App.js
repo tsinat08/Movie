@@ -44,7 +44,7 @@ class App extends React.Component{
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
-                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount}/>
+                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading}/>
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
             </div>
