@@ -19,7 +19,6 @@
 
 .SearchResults li{
     box-sizing: border-box;
-    padding: 8px 0;
     display: flex;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -27,8 +26,12 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-
     justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0;
 }
 
 .select:hover{
@@ -50,7 +53,7 @@
     font-weight: 300;
     font-family: 'Roboto Mono', monospace;
     padding: 0px 10px;
-    border-radius: 8px;
+    border-radius: 50px;
     background: rgba(0,0,0,0.08);
 }
 

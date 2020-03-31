@@ -9,7 +9,9 @@ class SearchResults extends React.Component{
                 <h3>Search Results</h3>
                 <li className="select">
                     <ul>Movies</ul>
-                    <span>0</span>
+                    <span>{this.props.moviesCount}</span>
+                    <ul>TV Shows</ul>
+                    <span>{this.props.tvCount}</span>
                 </li>
             </div>
         )

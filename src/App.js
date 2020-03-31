@@ -13,7 +13,8 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            searchResult: [{name:'name'}],
+            moviesCount:'0',
+            tvCount: '0',
             movies:[],
             tv:[],
             loading: true
@@ -26,16 +27,17 @@ class App extends React.Component{
             .then(data => {
                 if(data.results){
                     this.setState({movies: data.results, loading: false});
+                    this.setState({moviesCount: data.total_results})
+                    console.log(this.state.moviesCount)
                 }
             });
         TV.searchTV(term).then(data => data.json())
             .then(data => {
                 if(data.results){
                     this.setState({tv: data.results, loading: false});
+                    this.setState({tvCount: data.total_results})
                 }
             });
-
-
     }
     render() {
         return (
@@ -45,7 +47,7 @@ class App extends React.Component{
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
-                    <SearchResults searchResult={this.state.searchResult}/>
+                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount}/>
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
             </div>
