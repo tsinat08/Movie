@@ -3,7 +3,7 @@ import './App.css';
 import Header from '../src/Components/Header/Header';
 import Search from '../src/Components/Search/Search';
 import MovieList from "./Components/MovieList/MovieList";
-import SeacrchList from '../src/Components/SearchResults/SearchResults';
+import SearchResults from '../src/Components/SearchResults/SearchResults';
 import {Movies} from './util/movies';
 import {TV} from './util/movies';
 
@@ -13,6 +13,7 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
+            searchResult: [{name:'name'}],
             movies:[],
             tv:[],
             loading: true
@@ -44,7 +45,7 @@ class App extends React.Component{
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
-                    <SeacrchList/>
+                    <SearchResults searchResult={this.state.searchResult}/>
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
             </div>

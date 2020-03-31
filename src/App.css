@@ -2,8 +2,6 @@
 .App {
   height: 100%;
   width: 100%;
-  /*padding: 0 17% 10% 17%;*/
-  /*background-image: url("background_photo_desktop.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +10,7 @@
 
 }
 .headers{
-  position: inherit;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,8 +25,7 @@
   align-items: flex-start;
   align-content: flex-start;
   padding: 30px 40px 30px 40px;
-  margin-left: 7%;
-  margin-right: 10%;
+  margin: 15rem 10% 15rem 7%;
 }
 
 
