@@ -13,7 +13,7 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            moviesCount:'0',
+            moviesCount:'',
             tvCount: '0',
             movies:[],
             tv:[],
