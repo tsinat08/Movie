@@ -17,7 +17,7 @@
     background-color: #9e6569
 }
 
-.SearchResults li{
+.SearchResults ul{
     box-sizing: border-box;
     display: flex;
     list-style-type: disc;
@@ -38,7 +38,7 @@
     background: rgba(0,0,0,0.08);
 }
 
-.SearchResults ul{
+.SearchResults li{
     font-weight: 600;
     color: #000;
     font-size: 1em;

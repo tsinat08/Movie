@@ -25,7 +25,16 @@
   align-items: flex-start;
   align-content: flex-start;
   padding: 30px 40px 30px 40px;
-  margin: 15rem 10% 15rem 7%;
+  margin: 15rem 10% 0rem 7%;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+
 }
 
 

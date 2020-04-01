@@ -11,10 +11,10 @@ class SearchResults extends React.Component {
                     <h3>Search Results</h3>
                     {this.results.map((result) => {
                         return(
-                        <li className="select" key={result.id}>
-                            <ul>{result.resultsType}</ul>
+                        <ul className="select" key={result.id}>
+                            <li>{result.resultsType}</li>
                             <span>{result.resultsType === 'Movies' ? this.props.moviesCount : this.props.tvCount}</span>
-                        </li>
+                        </ul>
                     )})}
                 </div> : null
         )
