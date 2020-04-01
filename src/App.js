@@ -14,8 +14,6 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            moviesCount:'',
-            tvCount: '0',
             movies:[],
             tv:[],
             loading: true
@@ -26,14 +24,14 @@ class App extends React.Component{
     searchDatabase(term) {
         Movies.searchMovies(term).then(data => data.json())
             .then(data => {
-                if(data.results){
-                    this.setState({movies: data.results, moviesCount: data.total_results, loading: false});
+                if(data){
+                    this.setState({movies: data, loading: false});
                 }
             });
         TV.searchTV(term).then(data => data.json())
             .then(data => {
-                if(data.results){
-                    this.setState({tv: data.results, tvCount: data.total_results, loading: false});
+                if(data){
+                    this.setState({tv: data, loading: false});
                 }
             });
     }
@@ -49,7 +47,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination/>
+                    <Pagination moviePage={this.state.moviesPage} tvPage={this.state.tvPage}/>
                 </div>
             </div>
         );

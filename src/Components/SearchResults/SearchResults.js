@@ -1,9 +1,19 @@
 import React from 'react';
 import './SearchResults.css';
+import MovieList from "../MovieList/MovieList";
 
 class SearchResults extends React.Component {
-        results=[{resultsType: 'Movies', resultsCount: this.props.moviesCount, id: 1},
-            {resultsType: 'TV Shows', resultsCount: this.props.tvCount, id: 2}]
+    constructor(props) {
+        super(props);
+    }
+    results=[{resultsType: 'Movies', resultsCount: this.props.moviesCount, id: 1},
+        {resultsType: 'TV Shows', resultsCount: this.props.tvCount, id: 2}]
+
+    handleResults(){
+
+    }
+
+
     render() {
         return (
             !this.props.loading && !(this.props.movies && this.props.movies.length) && !(this.props.tv && this.props.tv.length) ?
@@ -12,7 +22,7 @@ class SearchResults extends React.Component {
                     {this.results.map((result) => {
                         return(
                         <ul className="select" key={result.id}>
-                            <li>{result.resultsType}</li>
+                            <li onClick={this.handleResults}>{result.resultsType}</li>
                             <span>{result.resultsType === 'Movies' ? this.props.moviesCount : this.props.tvCount}</span>
                         </ul>
                     )})}

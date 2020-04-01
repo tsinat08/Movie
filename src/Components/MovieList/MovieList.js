@@ -7,24 +7,22 @@ class MovieList extends React.Component{
 
 
     render() {
-
         return(
             <div className='MovieList'>
 
-                {   this.props.movies && this.props.movies.length ?
-                    this.props.movies.map(movie=>{
+                {   this.props.movies.results && this.props.movies.results.length ?
+                    this.props.movies.results.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='false'/>
                     }): null
                 }
-                {   this.props.tv && this.props.tv.length ?
-                    this.props.tv.map(movie=>{
+                {   this.props.tv.results && this.props.tv.results.length ?
+                    this.props.tv.results.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='true'/>
                     }): null
                 }
 
                 {
-
-                    !this.props.loading && !(this.props.movies && this.props.movies.length) && !(this.props.tv && this.props.tv.length)?
+                    !this.props.loading && !(this.props.movies.results && this.props.movies.results.length) && !(this.props.tv.results && this.props.tv.results.length)?
                              <div className="movie">
                                 <div className="image-container" >
                                     <img src={noImage}/>
