@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +94,7 @@
       <workItem from="1585359756643" duration="4945000" />
       <workItem from="1585437938752" duration="6196000" />
       <workItem from="1585482228008" duration="26496000" />
-      <workItem from="1585664094729" duration="23313000" />
-    </task>
-    <task id="LOCAL-00019" summary="update in CSS">
-      <created>1583700218528</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1583700218528</updated>
+      <workItem from="1585664094729" duration="25391000" />
     </task>
     <task id="LOCAL-00020" summary="update in CSS">
       <created>1583715169769</created>
@@ -443,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585690181630</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="adding pagination">
+      <created>1585706842602</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1585706842602</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView">
@@ -481,13 +477,14 @@
     <MESSAGE value="editing CSS" />
     <MESSAGE value="add search results box" />
     <MESSAGE value="add search results counts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search results counts" />
+    <MESSAGE value="adding pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding pagination" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1585690181040">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1585706841918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585690181040" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585706841918" />
     <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1585669363644">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -508,10 +505,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585630917884" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585690183452">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585706845155">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585690183452" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585706845155" />
     <state x="168" y="120" width="1200" height="584" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1585628908430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

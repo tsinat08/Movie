@@ -15,12 +15,34 @@
 .pages {
     list-style-type: none;
     display: flex;
+
     /*font-weight: 600;*/
     /*margin-left: 4px;*/
     /*margin-right: 4px;*/
 }
 
 .pages li{
+    padding: 2px 8px;
+    margin-right: 4px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pages a{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: black;
+}
+
+.previous .next{
+    font-weight: 600;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+}
+.current {
     border: 1px solid rgba(0,0,0,1);
     padding: 2px 8px;
     margin-right: 4px;
