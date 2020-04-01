@@ -9,6 +9,7 @@ class MovieList extends React.Component{
         return(
             <div className='MovieList'>
                 <div className='SearchResults_wrap'>
+                    {console.log(this.props.movies)}
                     {this.props.movies.results || this.props.tv.results ?
                         <SearchResults moviesCount={this.props.movies.total_results} tvCount={this.props.tv.total_results}/> : null
                     }

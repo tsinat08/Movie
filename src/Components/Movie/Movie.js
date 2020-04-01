@@ -37,7 +37,6 @@ class Movie extends React.Component{
 
     }
     render() {
-        console.log(this.props)
         return (
             <div className="movie">
                 <div className="image-container">

@@ -5,11 +5,16 @@ class Search extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            term:''
+            term:'',
+            sortBy: 'movies'
         }
         this.handleTermChange = this.handleTermChange.bind(this);
         this.handleSearch=this.handleSearch.bind(this);
 
+        this.sortBy={
+            'Movies': 'movie',
+            'TV Shows': 'tvShows'
+        };
     }
 
     handleTermChange(event){
@@ -30,9 +35,14 @@ class Search extends React.Component{
 
     render() {
         return(
-            <div className="search">
-                     <input onKeyPress={this.handleKey} placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
-                     <button onClick={this.handleSearch} >SEARCH</button>
+            <div className='search'>
+                <div className='sortBy'>
+
+                </div>
+                <div className="search_fields">
+                         <input onKeyPress={this.handleKey} placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
+                         <button onClick={this.handleSearch} >SEARCH</button>
+                </div>
             </div>
         )
     }
