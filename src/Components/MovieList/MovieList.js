@@ -1,15 +1,19 @@
 import React from 'react';
 import './MovieList.css';
 import Movie from '../Movie/Movie';
+import SearchResults from "../SearchResults/SearchResults";
 import noImage from '../Movie/noImage.png'
 
 class MovieList extends React.Component{
-
-
     render() {
         return(
             <div className='MovieList'>
-
+                <div className='SearchResults_wrap'>
+                    {this.props.movies.results || this.props.tv.results ?
+                        <SearchResults moviesCount={this.props.movies.total_results} tvCount={this.props.tv.total_results}/> : null
+                    }
+                </div>
+                <div className='Movie_wrap'>
                 {   this.props.movies.results && this.props.movies.results.length ?
                     this.props.movies.results.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='false'/>
@@ -20,10 +24,9 @@ class MovieList extends React.Component{
                         return <Movie key={movie.id} results={movie} tv='true'/>
                     }): null
                 }
-
                 {
                     !this.props.loading && !(this.props.movies.results && this.props.movies.results.length) && !(this.props.tv.results && this.props.tv.results.length)?
-                             <div className="movie">
+                             <div className="no_movie">
                                 <div className="image-container" >
                                     <img src={noImage}/>
                                 </div>
@@ -33,8 +36,10 @@ class MovieList extends React.Component{
                              </div>
                          : null
                 }
+                </div>
 
             </div>
+
         )
     }
 }

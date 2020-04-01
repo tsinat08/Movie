@@ -15,9 +15,9 @@ class SearchResults extends React.Component {
 
 
     render() {
+        console.log(this.props)
         return (
-            !this.props.loading && !(this.props.movies && this.props.movies.length) && !(this.props.tv && this.props.tv.length) ?
-                <div className="SearchResults">
+                 <div className="SearchResults">
                     <h3>Search Results</h3>
                     {this.results.map((result) => {
                         return(
@@ -26,7 +26,7 @@ class SearchResults extends React.Component {
                             <span>{result.resultsType === 'Movies' ? this.props.moviesCount : this.props.tvCount}</span>
                         </ul>
                     )})}
-                </div> : null
+                </div>
         )
     }
 }
