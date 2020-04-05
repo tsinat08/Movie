@@ -1,12 +1,12 @@
-const apiKey='56b205b08ae40f18ccbbdc95cb94e6ce';
+const apiKey='';
 
 export const Movies = {
-    searchMovies (term){
-        return fetch (`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${term}`)
+    searchMovies (term, page){
+        return fetch (`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&page=${page}&query=${term}`)
     }
 }
 export const TV= {
-    searchTV(term) {
-        return fetch(`https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${term}`)
+    searchTV(term, page) {
+        return fetch(`https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&page=${page}&query=${term}`)
     }
 }

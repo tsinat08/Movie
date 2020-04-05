@@ -18,9 +18,7 @@ class SearchResults extends React.Component {
             }
         }
 
-    count(){
 
-    }
     render() {
         console.log(this.props)
         return (

@@ -20,17 +20,17 @@ class App extends React.Component{
         this.searchDatabase=this.searchDatabase.bind(this)
     }
 
-    searchDatabase(term) {
-        Movies.searchMovies(term).then(data => data.json())
+    searchDatabase(term, page) {
+        Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
                 if(data){
                     this.setState({movies: data, loading: false});
                 }
             });
-        TV.searchTV(term).then(data => data.json())
+        TV.searchTV(term, page).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({tv: data, loading: false});
+                    this.setState({tv: data,  loading: false});
                 }
             });
     }

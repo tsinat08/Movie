@@ -13,7 +13,7 @@ class Pagination extends React.Component{
                     <li><a className={this.current} href="#">3</a></li>
                     <li><a className={this.current} href="#">4</a></li>
                     <li><a className={this.current} href="#">5</a></li>
-                    <li classname='next'><a href="#">Next→</a></li>
+                    <li className='next'><a href="#">Next→</a></li>
                 </ul>
             </div>
         )
