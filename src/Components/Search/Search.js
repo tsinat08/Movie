@@ -10,11 +10,6 @@ class Search extends React.Component{
         }
         this.handleTermChange = this.handleTermChange.bind(this);
         this.handleSearch=this.handleSearch.bind(this);
-
-        this.sortBy={
-            'Movies': 'movie',
-            'TV Shows': 'tvShows'
-        };
     }
 
     handleTermChange(event){
@@ -23,7 +18,6 @@ class Search extends React.Component{
 
     handleSearch(){
         this.props.searchDatabase(this.state.term);
-
     }
     handleKey = (e) => {
         if(e.which === 13) {
@@ -31,7 +25,6 @@ class Search extends React.Component{
             e.preventDefault();
         }
     }
-
 
     render() {
         return(

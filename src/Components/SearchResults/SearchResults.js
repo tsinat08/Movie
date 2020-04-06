@@ -12,15 +12,12 @@ class SearchResults extends React.Component {
 
     handleResults(){
         if(this.results === 'Movie') {
-            console.log('no')
         }else {
-                console.log('yes')
             }
         }
 
 
     render() {
-        console.log(this.props)
         return (
                  <div className="SearchResults">
                     <h3>Search Results</h3>

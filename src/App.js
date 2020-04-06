@@ -15,22 +15,25 @@ class App extends React.Component{
         this.state={
             movies:[],
             tv:[],
-            loading: true
+            loading: true,
+            moviesPage: '',
+            tvPage: ''
         }
         this.searchDatabase=this.searchDatabase.bind(this)
     }
 
-    searchDatabase(term, page) {
-        Movies.searchMovies(term, page).then(data => data.json())
+    searchDatabase(term, pages) {
+        Movies.searchMovies(term, pages).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({movies: data, loading: false});
-                }
+                    this.setState({movies: data, moviesPage: data.total_pages, loading: false});
+                };
+
             });
-        TV.searchTV(term, page).then(data => data.json())
+        TV.searchTV(term, pages).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({tv: data,  loading: false});
+                    this.setState({tv: data, tvPage: data.total_pages, loading: false});
                 }
             });
     }
