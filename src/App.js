@@ -16,19 +16,20 @@ class App extends React.Component{
             movies:[],
             tv:[],
             loading: true,
-            moviesPage: '',
-            tvPage: ''
+            chooseMoviesPage: '',
+            tvPage: '',
+            moviesTotalPage: ''
         }
-        this.searchDatabase=this.searchDatabase.bind(this)
+        this.searchDatabase=this.searchDatabase.bind(this);
+        this.chooseMoviePage=this.chooseMoviePage.bind(this);
     }
 
     searchDatabase(term, pages) {
         Movies.searchMovies(term, pages).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({movies: data, moviesPage: data.total_pages, loading: false});
+                    this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false});
                 };
-
             });
         TV.searchTV(term, pages).then(data => data.json())
             .then(data => {
@@ -37,6 +38,11 @@ class App extends React.Component{
                 }
             });
     }
+        chooseMoviePage(newPage){
+        this.setState({moviesPage: newPage})
+            console.log(this.state.chooseMoviesPage)
+        }
+
     render() {
         return (
             <div className="App">
@@ -48,7 +54,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination moviesPage={this.state.moviesPage} tvPage={this.state.tvPage}/>
+                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviePage} tvPage={this.state.tvPage}/>
                 </div>
             </div>
         );
