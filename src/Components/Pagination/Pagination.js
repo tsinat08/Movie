@@ -12,21 +12,21 @@ class Pagination extends React.Component{
         let page=[]
         for(let i=0; i<(term); i++) {
             let a = i+1;
-            page.push(<li className='current' key={a} value={a}><a href="#">{a}</a></li>)
+            page.push(<li className='current' key={a} value={a} onClick={this.handleClick}>{a}</li>)
         }
         return page
     }
 
     handleClick(e){
         const pages=e.target.value;
-        //this.chooseMoviePage(pages);
-        console.log('e', pages)
+        this.props.chooseMoviesPage(pages);
+        //console.log('e', pages)
     }
     render() {
         console.log(this.props)
         return(
             <div className='paginations'>
-                <ul className='pages' onClick={this.handleClick}>
+                <ul className='pages' >
                     <li className='previous'><a href="#">←Previous</a></li>
                     {this.handlePages(this.props.moviesTotalPage)}
                     <li className='next'><a href="#">Next→</a></li>

@@ -18,7 +18,8 @@ class App extends React.Component{
             loading: true,
             chooseMoviesPage: '',
             tvPage: '',
-            moviesTotalPage: ''
+            moviesTotalPage: '',
+            moviesPage: ''
         }
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviePage=this.chooseMoviePage.bind(this);
@@ -40,7 +41,7 @@ class App extends React.Component{
     }
         chooseMoviePage(newPage){
         this.setState({moviesPage: newPage})
-            console.log(this.state.chooseMoviesPage)
+            console.log(newPage)
         }
 
     render() {
