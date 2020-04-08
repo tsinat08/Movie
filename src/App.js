@@ -13,6 +13,8 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
+            term: '',
+            page: 1,
             movies:[],
             tv:[],
             loading: true,
@@ -22,25 +24,30 @@ class App extends React.Component{
             moviesPage: ''
         }
         this.searchDatabase=this.searchDatabase.bind(this);
-        this.chooseMoviePage=this.chooseMoviePage.bind(this);
+        this.chooseMoviesPage=this.chooseMoviesPage.bind(this)
     }
 
-    searchDatabase(term, pages) {
-        Movies.searchMovies(term, pages).then(data => data.json())
+    searchDatabase(term, page) {
+
+        console.log('1st',page)
+        Movies.searchMovies(term, this.state.page).then(data => data.json())
             .then(data => {
+                console.log('apps', this.state.page)
                 if(data){
-                    this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false});
+                    this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false, term: term});
                 };
             });
-        TV.searchTV(term, pages).then(data => data.json())
+        TV.searchTV(term, page).then(data => data.json())
             .then(data => {
                 if(data){
                     this.setState({tv: data, tvPage: data.total_pages, loading: false});
                 }
             });
     }
-    searchDatabase(term){
-
+    chooseMoviesPage(props, newPage){
+        this.setState({
+            page: newPage})
+        this.searchDatabase(term, newPage)
     }
 
     render() {
@@ -54,7 +61,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviePage} tvPage={this.state.tvPage}/>
+                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvPage={this.state.tvPage}/>
                 </div>
             </div>
         );

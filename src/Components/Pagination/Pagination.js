@@ -23,7 +23,7 @@ class Pagination extends React.Component{
         //console.log('e', pages)
     }
     render() {
-        console.log(this.props)
+        //console.log(this.props)
         return(
             <div className='paginations'>
                 <ul className='pages' >
