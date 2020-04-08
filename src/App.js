@@ -39,10 +39,9 @@ class App extends React.Component{
                 }
             });
     }
-        chooseMoviePage(newPage){
-        this.setState({moviesPage: newPage})
-            console.log(newPage)
-        }
+    searchDatabase(term){
+
+    }
 
     render() {
         return (
