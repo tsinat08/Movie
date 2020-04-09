@@ -38,7 +38,7 @@ class App extends React.Component{
         TV.searchTV(term, page).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({tv: data, tvTotalPage: data.total_pages, loading: false});
+                    this.setState({tv: data, tvTotalPage: data.total_pages, loading: false, term: term});
                 }
             });
     }

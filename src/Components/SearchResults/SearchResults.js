@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchResults.css';
-import MovieList from "../MovieList/MovieList";
+
 
 class SearchResults extends React.Component {
     constructor(props) {
