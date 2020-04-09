@@ -29,10 +29,8 @@ class App extends React.Component{
 
     searchDatabase(term, page) {
         page = this.state.page;
-        console.log(term, page);
         Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
-                console.log('apps', page)
                 if(data){
                     this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false, term: term });
                 };
