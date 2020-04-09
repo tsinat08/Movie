@@ -6,7 +6,6 @@ import noImage from '../Movie/noImage.png'
 
 class MovieList extends React.Component{
     render() {
-        console.log('MovieList')
         return(
             <div className='MovieList'>
                 <div className='SearchResults_wrap'>
