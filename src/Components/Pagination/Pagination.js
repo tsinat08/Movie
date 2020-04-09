@@ -17,18 +17,30 @@ class Pagination extends React.Component{
         return page
     }
 
+    handleAllPages(){
+        let term
+        if(this.props.moviesTotalPage && this.props.tvTotalPage) {
+            term = this.props.moviesTotalPage + this.props.tvTotalPage;
+        }else if (this.props.moviesTotalPage && !this.props.tvTotalPage){
+            term= this.props.moviesTotalPage;
+        }else if (!this.props.moviesTotalPage && this.props.tvTotalPage){
+            term=this.props.tvTotalPage;
+        }
+        return this.handlePages(term);
+    }
+
     handleClick(e){
         const pages=e.target.value;
         this.props.chooseMoviesPage(pages);
-        //console.log('e', pages)
     }
+
     render() {
-        //console.log(this.props)
+        console.log(this.props)
         return(
             <div className='paginations'>
                 <ul className='pages' >
                     <li className='previous'><a href="#">←Previous</a></li>
-                    {this.handlePages(this.props.moviesTotalPage)}
+                    {this.handleAllPages()}
                     <li className='next'><a href="#">Next→</a></li>
                 </ul>
             </div>

@@ -19,7 +19,7 @@ class App extends React.Component{
             tv:[],
             loading: true,
             chooseMoviesPage: '',
-            tvPage: '',
+            tvTotalPage: '',
             moviesTotalPage: '',
             moviesPage: ''
         }
@@ -28,26 +28,26 @@ class App extends React.Component{
     }
 
     searchDatabase(term, page) {
-
-        console.log('1st',page)
-        Movies.searchMovies(term, this.state.page).then(data => data.json())
+        page = this.state.page;
+        console.log(term, page);
+        Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
-                console.log('apps', this.state.page)
+                console.log('apps', page)
                 if(data){
-                    this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false, term: term});
+                    this.setState({movies: data, moviesTotalPage: data.total_pages, loading: false, term: term });
                 };
             });
         TV.searchTV(term, page).then(data => data.json())
             .then(data => {
                 if(data){
-                    this.setState({tv: data, tvPage: data.total_pages, loading: false});
+                    this.setState({tv: data, tvTotalPage: data.total_pages, loading: false});
                 }
             });
     }
-    chooseMoviesPage(props, newPage){
+    chooseMoviesPage(newPage){
         this.setState({
             page: newPage})
-        this.searchDatabase(term, newPage)
+        this.searchDatabase(this.state.term, newPage);
     }
 
     render() {
@@ -61,7 +61,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvPage={this.state.tvPage}/>
+                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}/>
                 </div>
             </div>
         );
