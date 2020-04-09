@@ -38,9 +38,9 @@ class Pagination extends React.Component{
         return(
             <div className='paginations'>
                 <ul className='pages' >
-                    <li className='previous'><a href="#">←Previous</a></li>
+                    <li className='previous'><a href=" ">←Previous</a></li>
                     {this.handleAllPages()}
-                    <li className='next'><a href="#">Next→</a></li>
+                    <li className='next'><a href=" ">Next→</a></li>
                 </ul>
             </div>
         )

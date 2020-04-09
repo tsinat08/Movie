@@ -4,6 +4,10 @@
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieList/MovieList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="test-branch-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
