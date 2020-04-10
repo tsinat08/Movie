@@ -47,7 +47,7 @@ class Movie extends React.Component{
                     <div className='title'>
                         <div className="bar"
                              style={{width: this.handleRating()}}>{this.props.results.vote_average > 0 ? `${this.handleRating()} Viewers Rating` : null}</div>
-                        <a href=' '>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </a>
+                        <a>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </a>
                         <span>{this.handleDate()} </span>
                     </div>
                     <p>{this.handleOverview()}</p>

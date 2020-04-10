@@ -7,9 +7,13 @@ class Pagination extends React.Component{
 
         this.handleClick=this.handleClick.bind(this)
     }
+    handleCurrentPage(){
+
+    }
 
     handlePages=(term) => {
         let page=[]
+        console.log(page)
         for(let i=0; i<(term); i++) {
             let a = i+1;
             page.push(<li className='current' key={a} value={a} onClick={this.handleClick}>{a}</li>)
@@ -36,13 +40,14 @@ class Pagination extends React.Component{
 
     render() {
         return(
+            this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
                 <ul className='pages' >
-                    <li className='previous'><a href=" ">←Previous</a></li>
+                    <li className='previous'>←Previous</li>
                     {this.handleAllPages()}
-                    <li className='next'><a href=" ">Next→</a></li>
+                    <li className='next'>Next→</li>
                 </ul>
-            </div>
+            </div>:null
         )
     }
 }
