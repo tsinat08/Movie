@@ -4,7 +4,9 @@ import './Pagination.css';
 class Pagination extends React.Component{
     constructor(props) {
         super(props);
-
+        this.state={
+            term: 0,
+        }
         this.handleClick=this.handleClick.bind(this)
     }
 
@@ -14,12 +16,6 @@ class Pagination extends React.Component{
             page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
         }
         return page
-    }
-    handleNext(page){
-         page = parseInt(this.state.currentPage) + 1;
-        console.log('next', typeof(page), page)
-        return page;
-
     }
 
     handleAllPages(){
@@ -31,12 +27,24 @@ class Pagination extends React.Component{
         }else if (!this.props.moviesTotalPage && this.props.tvTotalPage){
             term=this.props.tvTotalPage;
         }
-        return this.handlePages(term);
+        return {term: this.handlePages(term), count: term};
     }
 
+    handleNext=()=>{
+        let page=parseInt(this.props.currentPage) + 1;
+        this.setState({term:page})
+        this.props.chooseMoviesPage(page);
+    }
+
+    handlePrevious=()=>{
+            let page=parseInt(this.props.currentPage) - 1;
+            this.setState({term:page})
+            this.props.chooseMoviesPage(page);
+
+    }
     handleClick(e){
         let page=e.target.value;
-        this.setState({currentPage: page})
+        this.setState({term:page})
         this.props.chooseMoviesPage(page);
     }
 
@@ -45,9 +53,11 @@ class Pagination extends React.Component{
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
                 <ul className='pages' >
-                    {/*<button className='previous'>←Previous</button>*/}
-                    {this.handleAllPages()}
-                    {/*<button className='next' value={this.handleNext()} onClick={this.handleClick}>Next→</button>*/}
+                    {this.state.term > 1 ?
+                    <button className='previous' onClick={this.handlePrevious}>←Previous</button> :null}
+                    {this.handleAllPages().term}
+                    {this.handleAllPages().count > this.state.term ?
+                    <button className='next' onClick={this.handleNext}>Next→</button>: null}
                 </ul>
             </div>:null
         )

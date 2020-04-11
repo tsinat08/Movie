@@ -31,7 +31,6 @@ class App extends React.Component{
     }
 
     searchDatabase(term, page) {
-        page = this.state.page;
         Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
                 if(data){
@@ -48,6 +47,7 @@ class App extends React.Component{
     chooseMoviesPage(newPage){
         this.setState({
             page: newPage})
+        console.log('newPage', newPage)
         this.searchDatabase(this.state.term, newPage);
     }
     chooseResultType(type){
@@ -67,7 +67,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}/>
+                    <Pagination currentPage={this.state.page} moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}/>
                 </div>
             </div>
         );
