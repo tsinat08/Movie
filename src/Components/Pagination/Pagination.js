@@ -4,6 +4,9 @@ import './Pagination.css';
 class Pagination extends React.Component{
     constructor(props) {
         super(props);
+        this.state={
+            currentPage: 1
+        }
 
         this.handleClick=this.handleClick.bind(this)
     }
@@ -13,12 +16,16 @@ class Pagination extends React.Component{
 
     handlePages=(term) => {
         let page=[]
-        console.log(page)
-        for(let i=0; i<(term); i++) {
-            let a = i+1;
-            page.push(<li className='current' key={a} value={a} onClick={this.handleClick}>{a}</li>)
+        for(let i=1; i<=(term); i++) {
+            page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
         }
         return page
+    }
+    handleNext(page){
+         page = parseInt(this.state.currentPage) + 1;
+        console.log('next', typeof(page), page)
+        return page;
+
     }
 
     handleAllPages(){
@@ -34,8 +41,9 @@ class Pagination extends React.Component{
     }
 
     handleClick(e){
-        const pages=e.target.value;
-        this.props.chooseMoviesPage(pages);
+        let page=e.target.value;
+        this.setState({currentPage: page})
+        this.props.chooseMoviesPage(page);
     }
 
     render() {
@@ -43,9 +51,9 @@ class Pagination extends React.Component{
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
                 <ul className='pages' >
-                    <li className='previous'>←Previous</li>
+                    <button className='previous'>←Previous</button>
                     {this.handleAllPages()}
-                    <li className='next'>Next→</li>
+                    <button className='next' value={this.handleNext()} onClick={this.handleClick}>Next→</button>
                 </ul>
             </div>:null
         )
