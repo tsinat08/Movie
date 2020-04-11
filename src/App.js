@@ -22,10 +22,12 @@ class App extends React.Component{
             tvTotalPage: '',
             moviesTotalPage: '',
             moviesCount: '',
-            tvCount: ''
+            tvCount: '',
+            resultsType: ''
         }
         this.searchDatabase=this.searchDatabase.bind(this);
-        this.chooseMoviesPage=this.chooseMoviesPage.bind(this)
+        this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
+        this.chooseResultType=this.chooseResultType.bind(this);
     }
 
     searchDatabase(term, page) {
@@ -48,6 +50,10 @@ class App extends React.Component{
             page: newPage})
         this.searchDatabase(this.state.term, newPage);
     }
+    chooseResultType(type){
+        this.setState({resultsType: type})
+        console.log(this.state.resultsType)
+    }
 
     render() {
         return (
@@ -57,7 +63,7 @@ class App extends React.Component{
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
-                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading}/>
+                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading} chooseResultType={this.chooseResultType}/>
                     <MovieList movies={this.state.movies} tv={this.state.tv}/>
                 </div>
                 <div className='pagination'>

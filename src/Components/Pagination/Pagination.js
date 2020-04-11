@@ -4,14 +4,8 @@ import './Pagination.css';
 class Pagination extends React.Component{
     constructor(props) {
         super(props);
-        this.state={
-            currentPage: 1
-        }
 
         this.handleClick=this.handleClick.bind(this)
-    }
-    handleCurrentPage(){
-
     }
 
     handlePages=(term) => {
@@ -51,9 +45,9 @@ class Pagination extends React.Component{
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
                 <ul className='pages' >
-                    <button className='previous'>←Previous</button>
+                    {/*<button className='previous'>←Previous</button>*/}
                     {this.handleAllPages()}
-                    <button className='next' value={this.handleNext()} onClick={this.handleClick}>Next→</button>
+                    {/*<button className='next' value={this.handleNext()} onClick={this.handleClick}>Next→</button>*/}
                 </ul>
             </div>:null
         )
