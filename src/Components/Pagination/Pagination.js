@@ -56,7 +56,7 @@ class Pagination extends React.Component{
                     {this.state.term > 1 ?
                     <button className='previous' onClick={this.handlePrevious}>←Previous</button> :null}
                     {this.handleAllPages().term}
-                    {this.handleAllPages().count > this.state.term ?
+                    {this.handleAllPages().count > this.state.term && this.handleAllPages().count !==1?
                     <button className='next' onClick={this.handleNext}>Next→</button>: null}
                 </ul>
             </div>:null

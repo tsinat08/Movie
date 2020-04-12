@@ -6,6 +6,8 @@ import noImage from '../Movie/noImage.png'
 
 class MovieList extends React.Component{
     render() {
+        console.log(this.props)
+
         return(
             <div className='MovieList'>
                 <div className='Movie_wrap'>
@@ -20,7 +22,7 @@ class MovieList extends React.Component{
                     }): null
                 }
                 {
-                    this.props.loading && !(this.props.movies.results && this.props.movies.results.length) && !(this.props.tv.results && this.props.tv.results.length)?
+                   ! this.props.loading && !(this.props.movies.results &&  this.props.tv.results.length ) && !(this.props.tv.results && this.props.tv.results.length)?
                              <div className="no_movie">
                                 <div className="image-container" >
                                     <img src={noImage} alt='poster'/>
@@ -28,8 +30,7 @@ class MovieList extends React.Component{
                                 <div className="movie-overview">
                                     <h3>No results found </h3>
                                 </div>
-                             </div>
-                         : null
+                             </div>  : null
                 }
                 </div>
 

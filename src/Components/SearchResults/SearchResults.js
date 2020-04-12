@@ -13,7 +13,7 @@ class SearchResults extends React.Component {
         {resultsType: 'TV Shows', resultsCount: this.props.tvCount, id: 2}]
 
     handleClick(e) {
-        let type= e.target.value;
+        let type= e.target.getAttribute('value');
         this.props.chooseResultType(type);
     }
 
@@ -24,8 +24,8 @@ class SearchResults extends React.Component {
                     <h3>Search Results</h3>
                     {this.results.map((result) => {
                         return(
-                        <ul className="select" key={result.id}>
-                            <li onClick={this.handleClick} value={result.id}>{result.resultsType}</li>
+                        <ul className="select" key={result.id} onClick={this.handleClick} value={result.id}>
+                            <li>{result.resultsType}</li>
                             <span>{result.resultsType === 'Movies' ? this.props.moviesCount : this.props.tvCount}</span>
                         </ul>
                     )})}

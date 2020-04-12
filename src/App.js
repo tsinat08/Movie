@@ -15,7 +15,7 @@ class App extends React.Component{
         super(props);
         this.state={
             term: '',
-            page: 1,
+            page: '',
             movies:[],
             tv:[],
             loading: true,
@@ -31,6 +31,7 @@ class App extends React.Component{
     }
 
     searchDatabase(term, page) {
+
         Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
                 if(data){
@@ -52,7 +53,7 @@ class App extends React.Component{
     }
     chooseResultType(type){
         this.setState({resultsType: type})
-        console.log(this.state.resultsType)
+        console.log(this.state.resultsType, type)
     }
 
     render() {
@@ -64,7 +65,7 @@ class App extends React.Component{
                 </div>
                 <div className='list'>
                     <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading} chooseResultType={this.chooseResultType}/>
-                    <MovieList movies={this.state.movies} tv={this.state.tv}/>
+                    <MovieList movies={this.state.movies} tv={this.state.tv} resultsType={this.state.resultsType} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
                     <Pagination currentPage={this.state.page} moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}/>
