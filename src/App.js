@@ -23,7 +23,7 @@ class App extends React.Component{
             moviesTotalPage: '',
             moviesCount: '',
             tvCount: '',
-            resultsType: ''
+            resultsType: '1'
         }
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);

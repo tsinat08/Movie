@@ -11,12 +11,12 @@ class MovieList extends React.Component{
         return(
             <div className='MovieList'>
                 <div className='Movie_wrap'>
-                {   this.props.movies.results && this.props.movies.results.length ?
+                {   this.props.movies.results && this.props.movies.results.length && this.props.resultsType === '1' ?
                     this.props.movies.results.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='false'/>
                     }): null
                 }
-                {   this.props.tv.results && this.props.tv.results.length ?
+                {   this.props.tv.results && this.props.tv.results.length && this.props.resultsType === '2' ?
                     this.props.tv.results.map(movie=>{
                         return <Movie key={movie.id} results={movie} tv='true'/>
                     }): null
