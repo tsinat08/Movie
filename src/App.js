@@ -23,7 +23,7 @@ class App extends React.Component{
             moviesTotalPage: '',
             moviesCount: '',
             tvCount: '',
-            resultsType: '1'
+            resultsType: 'Movie'
         }
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
@@ -65,7 +65,7 @@ class App extends React.Component{
                 </div>
                 <div className='list'>
                     <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading} chooseResultType={this.chooseResultType}/>
-                    <MovieList movies={this.state.movies} tv={this.state.tv} resultsType={this.state.resultsType} loading={this.state.loading}/>
+                    <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
                     <Pagination currentPage={this.state.page} moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}/>
