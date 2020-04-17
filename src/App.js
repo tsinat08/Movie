@@ -23,7 +23,7 @@ class App extends React.Component{
             moviesTotalPage: '',
             moviesCount: '',
             tvCount: '',
-            resultsType: 'Movie'
+            resultsType: 'Movies'
         }
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
@@ -31,7 +31,6 @@ class App extends React.Component{
     }
 
     searchDatabase(term, page) {
-
         Movies.searchMovies(term, page).then(data => data.json())
             .then(data => {
                 if(data){
