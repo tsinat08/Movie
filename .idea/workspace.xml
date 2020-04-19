@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieList/MovieList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/movies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +102,8 @@
       <workItem from="1586834775236" duration="32000" />
       <workItem from="1586918879703" duration="670000" />
       <workItem from="1586994011932" duration="644000" />
-      <workItem from="1587083048605" duration="3498000" />
-    </task>
-    <task id="LOCAL-00048" summary="adding date">
-      <created>1585219324418</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1585219324418</updated>
+      <workItem from="1587083048605" duration="3537000" />
+      <workItem from="1587259466882" duration="609000" />
     </task>
     <task id="LOCAL-00049" summary="add original  date">
       <created>1585282318213</created>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587089830629</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="adding pagination">
+      <created>1587090642853</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1587090642853</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TodoView">
@@ -490,10 +490,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="adding pagination" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1587090629180">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1587090642299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587090629180" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587090642299" />
     <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1585763478162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -514,10 +514,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1366" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585630917884" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587089832490">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1587090644674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587089832490" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587090644674" />
     <state x="168" y="120" width="1200" height="584" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1586644625399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
