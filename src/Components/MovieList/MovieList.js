@@ -9,18 +9,18 @@ class MovieList extends React.Component{
         return(
             <div className='MovieList'>
                 <div className='Movie_wrap'>
-                    {   !this.props.loading  && this.props.movies.results && this.props.movies.results.length && this.props.resultType ==='Movies' ?
+                    {   !this.props.loading  && this.props.movies.results  && this.props.resultType ==='Movies' ?
                         this.props.movies.results.map(movie=>{
                             return <Movie key={movie.id} results={movie} tv='false'/>
                         }): null
                     }
-                    {   !this.props.loading  && this.props.tv.results && this.props.tv.results.length && this.props.resultType === 'TV Shows'  ?
+                    {   !this.props.loading  && this.props.tv.results  && this.props.resultType === 'TV Shows'  ?
                         this.props.tv.results.map(movie=>{
                             return <Movie key={movie.id} results={movie} tv='true'/>
                         }): null
                     }
                     {
-                        ! this.props.loading && !(this.props.movies.results && this.props.tv.results.length ) && !(this.props.tv.results && this.props.tv.results.length)?
+                        ! this.props.loading && !(this.props.movies.results ) && !(this.props.tv.results )?
                              <div className="no_movie">
                                 <div className="image-container" >
                                     <img src={noImage} alt='poster'/>
@@ -37,3 +37,8 @@ class MovieList extends React.Component{
 }
 
 export default MovieList;
+
+/*&& this.props.movies.results.length
+&& this.props.tv.results.length
+&& this.props.movies.results.length
+&& this.props.tv.results.length*/
