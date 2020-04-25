@@ -19,17 +19,7 @@ class MovieList extends React.Component{
                             return <Movie key={movie.id} results={movie} tv='true'/>
                         }): null
                     }
-                {/*    {*/}
-                {/*        ! this.props.loading && !(this.props.movies.results && this.props.movies.results.length ) && !(this.props.tv.results && this.props.tv.results.length)?*/}
-                {/*             <div className="no_movie">*/}
-                {/*                <div className="image-container" >*/}
-                {/*                    <img src={noImage} alt='poster'/>*/}
-                {/*                </div>*/}
-                {/*                <div className="movie-overview">*/}
-                {/*                    <h3>No results found </h3>*/}
-                {/*                </div>*/}
-                {/*             </div>  : null*/}
-                {/*}*/}
+
                 </div>
             </div>
         )
