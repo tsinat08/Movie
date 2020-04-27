@@ -38,6 +38,10 @@
     background: rgba(0,0,0,0.08);
 }
 
+.selected{
+    background: rgba(0,0,0,0.08);
+}
+
 .SearchResults li{
     font-weight: 600;
     color: #000;
