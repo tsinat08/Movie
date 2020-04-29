@@ -21,14 +21,19 @@ class App extends React.Component{
             loading: true,
             tvTotalPage: '',
             moviesTotalPage: '',
-            moviesCount: '',
-            tvCount: '',
+            moviesCount: 0,
+            tvCount: 0,
             resultsType: 'Movies'
         }
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
         this.chooseResultType=this.chooseResultType.bind(this);
     }
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //   if(0 === this.state.moviesCount){
+    //         this.setState({resultsType: 'TV Shows'} )
+    //   }
+    // }
 
     searchDatabase(term, page) {
         Movies.searchMovies(term, page).then(data => data.json())
@@ -47,12 +52,10 @@ class App extends React.Component{
     chooseMoviesPage(newPage){
         this.setState({
             page: newPage})
-        console.log('newPage', newPage)
         this.searchDatabase(this.state.term, newPage);
     }
     chooseResultType(type){
         this.setState({resultsType: type})
-        console.log(this.state.resultsType, type)
     }
 
     render() {

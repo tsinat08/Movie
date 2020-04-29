@@ -9,6 +9,7 @@ class MovieList extends React.Component{
         return(
             <div className='MovieList'>
                 <div className='Movie_wrap'>
+
                     {   !this.props.loading  && this.props.movies.results  && this.props.resultType ==='Movies' ?
                         this.props.movies.results.map(movie=>{
                             return <Movie key={movie.id} results={movie} tv='false'/>
