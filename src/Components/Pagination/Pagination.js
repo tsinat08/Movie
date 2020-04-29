@@ -10,6 +10,7 @@ class Pagination extends React.Component{
         this.handleClick=this.handleClick.bind(this)
     }
 
+
     handlePages=(term) => {
         let page=[]
         for(let i=1; i<=(term); i++) {
@@ -22,7 +23,8 @@ class Pagination extends React.Component{
         let term
         if(this.props.moviesTotalPage && this.props.tvTotalPage) {
             term = this.props.moviesTotalPage + this.props.tvTotalPage;
-        }else if (this.props.moviesTotalPage && !this.props.tvTotalPage){
+        }else
+        if (this.props.moviesTotalPage && !this.props.tvTotalPage){
             term= this.props.moviesTotalPage;
         }else if (!this.props.moviesTotalPage && this.props.tvTotalPage){
             term=this.props.tvTotalPage;
@@ -49,6 +51,7 @@ class Pagination extends React.Component{
     }
 
     render() {
+        console.log(this.props)
         return(
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>

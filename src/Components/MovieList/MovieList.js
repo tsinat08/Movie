@@ -5,7 +5,6 @@ import noImage from '../Movie/noImage.png'
 
 class MovieList extends React.Component{
     render() {
-        console.log(this.props)
         return(
             <div className='MovieList'>
                 <div className='Movie_wrap'>
