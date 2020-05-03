@@ -22,10 +22,9 @@ class Pagination extends React.Component{
 
     handleAllPages(){
         let term
-        console.log('type',this.state.type)
-        if(this.state.type === "Movies"){
+        if(this.props.resultType === "Movies"){
             term= this.props.moviesTotalPage;
-        }else if (this.state.type === "TV Shows"){
+        }else if (this.props.resultType === "TV Shows"){
             term=this.props.tvTotalPage;
         }
         return {term: this.handlePages(term), count: term};

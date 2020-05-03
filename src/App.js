@@ -29,11 +29,6 @@ class App extends React.Component{
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
         this.chooseResultType=this.chooseResultType.bind(this);
     }
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //   if(0 === this.state.moviesCount){
-    //         this.setState({resultsType: 'TV Shows'} )
-    //   }
-    // }
 
     searchDatabase(term, page) {
         Movies.searchMovies(term, page).then(data => data.json())
@@ -50,9 +45,10 @@ class App extends React.Component{
             });
     }
     chooseMoviesPage(newPage){
-        this.setState({
-            page: newPage})
+        // this.setState({
+        //     page: newPage})
         this.searchDatabase(this.state.term, newPage);
+
     }
     chooseResultType(type){
         this.setState({resultsType: type})
@@ -70,7 +66,7 @@ class App extends React.Component{
                     <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType} loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
-                    <Pagination currentPage={this.state.page} moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage} resultType={this.state.resultsType}/>
+                    <Pagination moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage} resultType={this.state.resultsType}/>
                 </div>
             </div>
         );
