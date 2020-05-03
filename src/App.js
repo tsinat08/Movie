@@ -8,8 +8,6 @@ import Pagination from "./Components/Pagination/Pagination";
 import {Movies} from './util/movies';
 import {TV} from './util/movies';
 
-
-
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -48,10 +46,12 @@ class App extends React.Component{
         this.setState({
             page: newPage})
         this.searchDatabase(this.state.term, newPage);
+
     }
+
     chooseResultType(type){
         this.setState({resultsType: type})
-    }
+            }
 
     render() {
         return (

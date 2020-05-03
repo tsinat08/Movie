@@ -6,12 +6,16 @@ class Pagination extends React.Component{
         super(props);
         this.state={
             term: 0,
-            type:'',
+            page: 1,
         }
         this.handleClick=this.handleClick.bind(this)
     }
 
-
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     if(prevProps.resultsType!== this.props.resultType){
+    //         this.setState({term: 1})
+    //     }
+    // }
     handlePages=(term) => {
         let page=[]
         for(let i=1; i<=(term); i++) {
@@ -33,23 +37,25 @@ class Pagination extends React.Component{
     handleNext=()=>{
         let page=parseInt(this.props.currentPage) + 1;
         this.setState({term:page})
+        console.log('next','page', page, ':term', this.state.term)
         this.props.chooseMoviesPage(page);
     }
 
     handlePrevious=()=>{
             let page=parseInt(this.props.currentPage) - 1;
             this.setState({term:page})
+        console.log('pre','page', page, ':term', this.state.term)
             this.props.chooseMoviesPage(page);
 
     }
     handleClick(e){
         let page=e.target.value;
         this.setState({term:page})
+        console.log('page', page, ':term', this.state.term)
         this.props.chooseMoviesPage(page);
     }
 
     render() {
-        console.log(this.props)
         return(
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
