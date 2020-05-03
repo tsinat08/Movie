@@ -49,7 +49,6 @@ class Pagination extends React.Component{
     }
 
     render() {
-
         console.log(this.props)
         return(
             this.props.moviesTotalPage || this.props.tvTotalPage ?
