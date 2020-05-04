@@ -5,17 +5,11 @@ class Pagination extends React.Component{
     constructor(props) {
         super(props);
         this.state={
-            term: 0,
-            page: 1,
+            term: 1,
         }
         this.handleClick=this.handleClick.bind(this)
     }
 
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     if(prevProps.resultsType!== this.props.resultType){
-    //         this.setState({term: 1})
-    //     }
-    // }
     handlePages=(term) => {
         let page=[]
         for(let i=1; i<=(term); i++) {
@@ -35,27 +29,27 @@ class Pagination extends React.Component{
     }
 
     handleNext=()=>{
-        let page=parseInt(this.props.currentPage) + 1;
+        let page=this.props.resultType === "Movies" ? parseInt(this.props.currentPageMovie) + 1 : parseInt(this.props.currentPageTV) + 1;
         this.setState({term:page})
-        console.log('next','page', page, ':term', this.state.term)
-        this.props.chooseMoviesPage(page);
+        this.props.chooseMoviesPage(page, this.props.resultType);
     }
-
     handlePrevious=()=>{
-            let page=parseInt(this.props.currentPage) - 1;
+        let page=this.props.resultType === "Movies" ? parseInt(this.props.currentPageMovie) - 1 : parseInt(this.props.currentPageTV) - 1;
             this.setState({term:page})
-        console.log('pre','page', page, ':term', this.state.term)
-            this.props.chooseMoviesPage(page);
-
+            this.props.chooseMoviesPage(page, this.props.resultType);
     }
     handleClick(e){
-        let page=e.target.value;
+        let page=parseInt(e.target.value);
         this.setState({term:page})
-        console.log('page', page, ':term', this.state.term)
-        this.props.chooseMoviesPage(page);
+        this.props.chooseMoviesPage(page, this.props.resultType);
+    }
+    componentDidUpdate(prevProps) {
+        if(prevProps.resultsType !== this.props.resultType && this.state.term !== 1) this.setState({term: 1})
     }
 
+
     render() {
+
         return(
             this.props.moviesTotalPage || this.props.tvTotalPage ?
             <div className='paginations'>
@@ -70,16 +64,4 @@ class Pagination extends React.Component{
         )
     }
 }
-
 export default Pagination;
-
-/*
-if(this.props.moviesTotalPage && this.props.tvTotalPage) {
-            term = this.props.moviesTotalPage + this.props.tvTotalPage;
-        }else
-        if (this.props.moviesTotalPage && !this.props.tvTotalPage){
-            term= this.props.moviesTotalPage;
-        }else if (!this.props.moviesTotalPage && this.props.tvTotalPage){
-            term=this.props.tvTotalPage;
-        }
- */
