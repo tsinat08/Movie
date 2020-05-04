@@ -37,8 +37,3 @@ class MovieList extends React.Component{
 }
 
 export default MovieList;
-
-/*&& this.props.movies.results.length
-&& this.props.tv.results.length
-
-*/
