@@ -12,11 +12,11 @@ class Pagination extends React.Component{
 
     handlePages=(term) => {
         let page=[]
-        if(term <= 10) {
+        if(term < 12) {
             for (let i = 1; i <= (term); i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term < 8 && term >10){
+        }else if(this.state.term < 8 && term >=12){
             for (let i = 1; i <= (8); i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
@@ -24,7 +24,15 @@ class Pagination extends React.Component{
             for (let i = term -1; i <=term; i++){
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term >= 8 && term >10){
+        } else if(this.state.term >=8 && term <= 12){
+            for (let i = 1; i <= 2; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+            page.push(<li key={term+1}>...</li>);
+            for (let i = term-8; i <= term; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+        }else if(this.state.term >= 8 && term > 12){
             for (let i = 1; i <= 2; i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
@@ -49,7 +57,7 @@ class Pagination extends React.Component{
         }else if (this.props.resultsType === "TV Shows"){
             term=this.props.tvTotalPage;
         }
-        term=13;
+        term=20;
         return {term: this.handlePages(term), count: term};
     }
 
