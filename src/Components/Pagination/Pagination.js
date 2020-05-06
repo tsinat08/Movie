@@ -32,7 +32,7 @@ class Pagination extends React.Component{
             for (let i = term-8; i <= term; i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term >= 8 && term > 12){
+        }else if(this.state.term >= 8 && term-this.state.term > 4){
             for (let i = 1; i <= 2; i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
@@ -44,8 +44,14 @@ class Pagination extends React.Component{
             for (let i = term-1; i <= term; i++) {
                 page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-
-
+        }else if(this.state.term >= 8 && term-this.state.term <= 4){
+            for (let i = 1; i <= 2; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+            page.push(<li key={0}>...</li>);
+            for (let i = term-6; i <= term; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
         }
         return page
     }
@@ -57,7 +63,7 @@ class Pagination extends React.Component{
         }else if (this.props.resultsType === "TV Shows"){
             term=this.props.tvTotalPage;
         }
-        term=20;
+        term=100;
         return {term: this.handlePages(term), count: term};
     }
 
@@ -77,9 +83,6 @@ class Pagination extends React.Component{
         this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     componentDidUpdate(prevProps) {
-        console.log('props',this.props)
-        console.log('pre', prevProps.resultsType);
-        console.log('now', this.props.resultsType);
         console.log('term', this.state.term);
         if((prevProps.resultsType !== this.props.resultsType) && this.state.term !== 1) this.setState({term: 1})
     }
