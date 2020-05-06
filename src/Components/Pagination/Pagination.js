@@ -12,39 +12,68 @@ class Pagination extends React.Component{
 
     handlePages=(term) => {
         let page=[]
-        for(let i=1; i<=(term); i++) {
-            page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+        if(term <= 10) {
+            for (let i = 1; i <= (term); i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+        }else if(this.state.term < 8 && term >10){
+            for (let i = 1; i <= (8); i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+            page.push(<li key={0}>...</li>);
+            for (let i = term -1; i <=term; i++){
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+        }else if(this.state.term >= 8 && term >10){
+            for (let i = 1; i <= 2; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+            page.push(<li key={0}>...</li>);
+            for (let i = (this.state.term-3); i <= (this.state.term+3); i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+            page.push(<li key={term+1}>...</li>);
+            for (let i = term-1; i <= term; i++) {
+                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+            }
+
+
         }
         return page
     }
 
     handleAllPages(){
         let term
-        if(this.props.resultType === "Movies"){
+        if(this.props.resultsType === "Movies"){
             term= this.props.moviesTotalPage;
-        }else if (this.props.resultType === "TV Shows"){
+        }else if (this.props.resultsType === "TV Shows"){
             term=this.props.tvTotalPage;
         }
+        term=13;
         return {term: this.handlePages(term), count: term};
     }
 
     handleNext=()=>{
-        let page=this.props.resultType === "Movies" ? parseInt(this.props.currentPageMovie) + 1 : parseInt(this.props.currentPageTV) + 1;
+        let page=this.props.resultsType === "Movies" ? parseInt(this.props.currentPageMovie) + 1 : parseInt(this.props.currentPageTV) + 1;
         this.setState({term:page})
-        this.props.chooseMoviesPage(page, this.props.resultType);
+        this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     handlePrevious=()=>{
-        let page=this.props.resultType === "Movies" ? parseInt(this.props.currentPageMovie) - 1 : parseInt(this.props.currentPageTV) - 1;
+        let page=this.props.resultsType === "Movies" ? parseInt(this.props.currentPageMovie) - 1 : parseInt(this.props.currentPageTV) - 1;
             this.setState({term:page})
-            this.props.chooseMoviesPage(page, this.props.resultType);
+            this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     handleClick(e){
         let page=parseInt(e.target.value);
         this.setState({term:page})
-        this.props.chooseMoviesPage(page, this.props.resultType);
+        this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     componentDidUpdate(prevProps) {
-        if(prevProps.resultsType !== this.props.resultType && this.state.term !== 1) this.setState({term: 1})
+        console.log('props',this.props)
+        console.log('pre', prevProps.resultsType);
+        console.log('now', this.props.resultsType);
+        console.log('term', this.state.term);
+        if((prevProps.resultsType !== this.props.resultsType) && this.state.term !== 1) this.setState({term: 1})
     }
 
 
