@@ -94,8 +94,11 @@ class App extends React.Component{
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
-                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount} loading={this.state.loading} chooseResultType={this.chooseResultType} currentPage={this.state.page}/>
-                    <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType} loading={this.state.loading}/>
+                    <SearchResults moviesCount={this.state.moviesCount} tvCount={this.state.tvCount}
+                                   loading={this.state.loading} chooseResultType={this.chooseResultType}
+                                   currentPage={this.state.page}/>
+                    <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType}
+                               loading={this.state.loading}/>
                 </div>
                 <div className='pagination'>
                     <Pagination currentPageMovie={this.state.pageMovie} currentPageTV={this.state.pageTV} moviesTotalPage={this.state.moviesTotalPage} chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage} resultsType={this.state.resultsType}/>
@@ -106,3 +109,9 @@ class App extends React.Component{
 }
 
 export default App;
+/*
+currentPageMovie={this.state.pageMovie}
+                                   currentPageTV={this.state.pageTV} moviesTotalPage={this.state.moviesTotalPage}
+                                   chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}
+                                   resultsType={this.state.resultsType}
+ */

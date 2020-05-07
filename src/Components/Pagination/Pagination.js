@@ -63,7 +63,6 @@ class Pagination extends React.Component{
         }else if (this.props.resultsType === "TV Shows"){
             term=this.props.tvTotalPage;
         }
-        term=12;
         return {term: this.handlePages(term), count: term};
     }
 
