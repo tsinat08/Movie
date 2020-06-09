@@ -1,4 +1,4 @@
-const apiKey='';
+const apiKey= process.env.REACT_APP_API_KEY;
 
 export const Movies = {
     search (term, page){
