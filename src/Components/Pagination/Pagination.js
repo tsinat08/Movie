@@ -82,7 +82,6 @@ class Pagination extends React.Component{
         this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     componentDidUpdate(prevProps) {
-        console.log('term', this.state.term);
         if((prevProps.resultsType !== this.props.resultsType) && this.state.term !== 1) this.setState({term: 1})
     }
 
