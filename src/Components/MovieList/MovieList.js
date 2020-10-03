@@ -1,7 +1,7 @@
 import React from 'react';
 import './MovieList.css';
 import Movie from '../Movie/Movie';
-import noImage from '../Movie/noImage.png'
+/*import noImage from '../Movie/noImage.png'*/
 
 class MovieList extends React.Component{
     render() {
