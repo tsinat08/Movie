@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,13 +136,7 @@
       <workItem from="1604056546016" duration="555000" />
       <workItem from="1608470331311" duration="1800000" />
       <workItem from="1609184883883" duration="568000" />
-    </task>
-    <task id="LOCAL-00086" summary="adding pagination">
-      <created>1586490810089</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1586490810089</updated>
+      <workItem from="1609388868391" duration="301000" />
     </task>
     <task id="LOCAL-00087" summary="adding pagination">
       <created>1586644415935</created>
@@ -482,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608507667411</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="final">
+      <created>1609388883327</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1609388883331</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView">
@@ -602,10 +601,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1608507670294">
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1609388886531">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1608507670294" />
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609388886531" />
     <state x="396" y="186" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1601773305355" />
   </component>
 </project>
