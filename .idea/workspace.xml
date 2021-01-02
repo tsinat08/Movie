@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="final" />
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,14 +142,9 @@
       <workItem from="1604056546016" duration="555000" />
       <workItem from="1608470331311" duration="1800000" />
       <workItem from="1609184883883" duration="568000" />
-      <workItem from="1609388868391" duration="301000" />
-    </task>
-    <task id="LOCAL-00087" summary="adding pagination">
-      <created>1586644415935</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1586644415935</updated>
+      <workItem from="1609388868391" duration="872000" />
+      <workItem from="1609451169003" duration="787000" />
+      <workItem from="1609546920022" duration="543000" />
     </task>
     <task id="LOCAL-00088" summary="adding pagination">
       <created>1586663762893</created>
@@ -481,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609388883331</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="final">
+      <created>1609389435978</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1609389435978</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView">
@@ -537,22 +545,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1608592607163">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1609447772816">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608592607163" />
-    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1608592607161">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1609447772816" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1609447772814">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1608592607161" />
-    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1608592607160">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1609447772814" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1609447772814">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1608592607160" />
-    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1608592607162">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1609447772814" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1609447772815">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607162" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1609447772815" />
     <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1608592607165">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -601,10 +609,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1609388886531">
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1609389438006">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609388886531" />
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609389438006" />
     <state x="396" y="186" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1601773305355" />
   </component>
 </project>
