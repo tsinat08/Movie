@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,14 +143,7 @@
       <workItem from="1609388868391" duration="872000" />
       <workItem from="1609451169003" duration="787000" />
       <workItem from="1609546920022" duration="839000" />
-      <workItem from="1609557878627" duration="257000" />
-    </task>
-    <task id="LOCAL-00089" summary="adding pagination">
-      <created>1586664133302</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1586664133302</updated>
+      <workItem from="1609557878627" duration="827000" />
     </task>
     <task id="LOCAL-00090" summary="adding pagination">
       <created>1586746445679</created>
@@ -487,17 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1609547652003</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="final">
+      <created>1609636045086</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1609636045086</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -607,10 +599,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1609547656311">
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1609636047344">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609547656311" />
+    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609636047344" />
     <state x="396" y="186" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1601773305355" />
     <state x="444" y="274" key="jetbrains.nodejs.interpreters-dialog" timestamp="1609547745824">
       <screen x="0" y="0" width="1440" height="900" />
