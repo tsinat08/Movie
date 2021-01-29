@@ -1,7 +1,14 @@
 .Header{
-    width: 100%;
     background-color: rgb(108, 1, 8);;
-    display: block;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 1300px;
+    width: 100vw;
+    padding: 0 40px;
+
 
 }
