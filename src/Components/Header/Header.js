@@ -13,8 +13,8 @@ class Header extends React.Component {
                 <table>
                     <tbody>
                     <tr >
-                        {/*<td className="pic"><img src={pic} alt='icon'/></td>*/}
-                        {/*<td className="name"><h1>Search For A Movies</h1></td>*/}
+                        <td className="pic"><img src={pic} alt='icon'/></td>
+                        <td className="name"><h1>Search For A Movies</h1></td>
                     </tr>
                     </tbody>
                 </table>
