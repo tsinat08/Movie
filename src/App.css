@@ -1,7 +1,9 @@
 
 .App {
+  background-color: #E3E3E3;
+  margin: 7rem 10% 0 10%;
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,8 +14,8 @@
 .headers{
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  /*left: 0;*/
+  /*width: 100%;*/
   z-index: 999;
   height: 200px;
 }
@@ -24,8 +26,8 @@
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  padding: 30px 40px 30px 40px;
-  margin: 15rem 10% 0rem 7%;
+
+
 }
 
 .pagination {
