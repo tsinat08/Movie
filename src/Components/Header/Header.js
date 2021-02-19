@@ -1,20 +1,20 @@
 import React from 'react';
 import './Header.css';
-// import pic from './movieIcon.jpg'
+ import pic from './movieIcon.jpg'
 
 
 class Header extends React.Component {
     render() {
         return(
             <div className="Header">
-                <nav className="navbar navbar-dark">
-                    <a className="name navbar-brand" href="#">Find Me The Movie</a>
-                </nav>
+                {/*<nav className="navbar navbar-dark">*/}
+                {/*    <a className="name navbar-brand" href="#">Find Me The Movie</a>*/}
+                {/*</nav>*/}
                 <table>
                     <tbody>
                     <tr >
-                        {/*<td className="pic"><img src={pic} alt='icon'/></td>*/}
-                        {/*<td className="name"><h1>Search For A Movies</h1></td>*/}
+                        <td className="pic"><img src={pic} alt='icon'/></td>
+                        <td className="name"><h1>TV & MOVIE SEARCH</h1></td>
                     </tr>
                     </tbody>
                 </table>

@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="updating Bootstap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/Search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,14 +149,7 @@
       <workItem from="1611890400360" duration="110000" />
       <workItem from="1611979282225" duration="88000" />
       <workItem from="1612186486855" duration="431000" />
-      <workItem from="1613591830123" duration="3097000" />
-    </task>
-    <task id="LOCAL-00096" summary="adding pagination">
-      <created>1587089830629</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1587089830629</updated>
+      <workItem from="1613591830123" duration="5625000" />
     </task>
     <task id="LOCAL-00097" summary="adding pagination">
       <created>1587090642853</created>
@@ -492,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613687463285</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="updating Bootstap">
+      <created>1613694264329</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1613694264329</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

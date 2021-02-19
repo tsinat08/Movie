@@ -29,9 +29,6 @@ class Search extends React.Component{
     render() {
         return(
             <div className='search'>
-                <div className='sortBy'>
-
-                </div>
                 <div className="search_fields">
                          <input onKeyPress={this.handleKey} placeholder="Search for movie or tv show" onChange={this.handleTermChange}/>
                          <button onClick={this.handleSearch} >SEARCH</button>

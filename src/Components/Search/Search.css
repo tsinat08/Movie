@@ -1,16 +1,24 @@
+.search{
+    position: fixed;
+    top: 20%;
+    left: 15%;
+
+}
 .search_fields {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .search_fields input{
-    /*width: 100%;*/
-    padding: 0.66rem 24% 0.66rem 10%;;
-    /*margin-right: 2.22rem;*/
+    outline: none;
+    width: 67rem;
+    padding: 0.66rem 15% 0.66rem 2%;;
+    margin-right: 2.22rem;
+    border-radius: 54px;
     border: 1px solid;
-    border-radius: 4px;
-    font-size: 25px;
+    font-size: 15px;
     color: white;
     font-weight: 500;
     background-color: rgb(191, 162, 164);
@@ -18,7 +26,7 @@
 }
 .search_fields button {
     position: absolute;
-    right: 16%;
+    right: 3.5%;
     cursor: pointer;
     width: 8.11rem;
     padding: .77rem 0;
@@ -26,8 +34,8 @@
     background-color: rgb(158, 101, 105);
     text-align: center;
     font-size: .833rem;
-    transition: background-color .25s;
-    border: 0px;
+    /*transition: background-color .25s;*/
+    border: 0;
     color: #fff;
     font-weight: 500;
 }
@@ -37,5 +45,6 @@
 
 ::placeholder{
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+
 }
