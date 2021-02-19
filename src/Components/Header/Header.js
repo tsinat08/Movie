@@ -8,7 +8,7 @@ class Header extends React.Component {
         return(
             <div className="Header">
                 <nav className="navbar navbar-dark">
-                    <a className="name navbar-brand" href="#">Search For A Movies</a>
+                    <a className="name navbar-brand" href="#">Find Me The Movie</a>
                 </nav>
                 <table>
                     <tbody>

@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,14 +147,7 @@
       <workItem from="1611890400360" duration="110000" />
       <workItem from="1611979282225" duration="88000" />
       <workItem from="1612186486855" duration="431000" />
-      <workItem from="1613591830123" duration="2566000" />
-    </task>
-    <task id="LOCAL-00095" summary="adding pagination">
-      <created>1587085691756</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1587085691756</updated>
+      <workItem from="1613591830123" duration="3097000" />
     </task>
     <task id="LOCAL-00096" summary="adding pagination">
       <created>1587089830629</created>
@@ -493,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612186524739</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="updating Bootstap">
+      <created>1613687463284</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1613687463285</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,79 +537,5 @@
     <MESSAGE value="final" />
     <MESSAGE value="updating Bootstap" />
     <option name="LAST_COMMIT_MESSAGE" value="updating Bootstap" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1609447772816">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1609447772816" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1609447772814">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1609447772814" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1609447772814">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1609447772814" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1609447772815">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1609447772815" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1608592607165">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608592607165" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1608592607164">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1608592607164" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1608592607163">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1608592607163" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1608592607165">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607165" />
-    <state width="1419" height="304" key="GridCell.Tab.2.bottom" timestamp="1608592607166">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608592607166" />
-    <state width="1419" height="304" key="GridCell.Tab.2.center" timestamp="1608592607166">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1608592607166" />
-    <state width="1419" height="304" key="GridCell.Tab.2.left" timestamp="1608592607165">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1608592607165" />
-    <state width="1419" height="304" key="GridCell.Tab.2.right" timestamp="1608592607166">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607166" />
-    <state width="1419" height="304" key="GridCell.Tab.3.bottom" timestamp="1608592607168">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608592607168" />
-    <state width="1419" height="304" key="GridCell.Tab.3.center" timestamp="1608592607167">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state width="1419" height="304" key="GridCell.Tab.3.left" timestamp="1608592607167">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state width="1419" height="304" key="GridCell.Tab.3.right" timestamp="1608592607167">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1608592607167" />
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2" timestamp="1611979361129">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="339" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1611979361129" />
-    <state x="444" y="274" key="jetbrains.nodejs.interpreters-dialog" timestamp="1609547745824">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="444" y="274" key="jetbrains.nodejs.interpreters-dialog/0.0.1440.900@0.0.1440.900" timestamp="1609547745824" />
   </component>
 </project>

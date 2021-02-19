@@ -6,7 +6,10 @@
     position: relative;
     top: 0;
     /*left: 0;*/
-    max-width: 1300px;
-    /*width: 100vw;*/
+    /*max-width: 1300px;*/
+    width: 100vw;
     padding: 0 40px;
+}
+.name{
+    position: center;
 }
