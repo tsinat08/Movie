@@ -4,6 +4,7 @@
     left: 140px;
     width: 75%;
 }
+
 .search_fields {
     display: flex;
     flex-direction: column;
@@ -45,4 +46,16 @@
     color: white;
     font-family: Arial, sans-serif;
 
+}
+
+@media screen and (max-width: 1024px) {
+    .search {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+    .search_fields input{
+        border-radius: 0;
+    }
 }
