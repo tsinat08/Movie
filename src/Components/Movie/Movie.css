@@ -71,3 +71,8 @@
     background-color: #eaafaf;
 }
 
+@media screen and (max-width: 1024px) {
+    .movie{
+        margin: 1rem 0 1rem 0;
+    }
+}

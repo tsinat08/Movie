@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update CSS settings">
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="update CSS for iPhone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/Search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieList/MovieList.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,13 +149,6 @@
       <workItem from="1612186486855" duration="431000" />
       <workItem from="1613591830123" duration="9107000" />
       <workItem from="1613830138679" duration="934000" />
-    </task>
-    <task id="LOCAL-00098" summary="adding selecting by type">
-      <created>1587260210121</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1587260210122</updated>
     </task>
     <task id="LOCAL-00099" summary="adding selecting by type">
       <created>1587260232171</created>
@@ -494,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613701933572</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="update CSS for iPhone">
+      <created>1613841657920</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1613841657920</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set Movie" />
     <MESSAGE value="update in CSS" />
     <MESSAGE value="and apikey" />
     <MESSAGE value="and MovieList" />
@@ -538,6 +536,7 @@
     <MESSAGE value="final" />
     <MESSAGE value="updating Bootstap" />
     <MESSAGE value="Update CSS settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update CSS settings" />
+    <MESSAGE value="update CSS for iPhone" />
+    <option name="LAST_COMMIT_MESSAGE" value="update CSS for iPhone" />
   </component>
 </project>
