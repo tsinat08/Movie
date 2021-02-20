@@ -32,9 +32,10 @@ class Movie extends React.Component{
         return this.props.results.release_date ? moment(this.props.results.release_date).format("LL"): null
     }
     handleRating(){
-        return this.props.results.vote_average * 10 + "%"
-
-
+        return (this.props.results.vote_average).toFixed(1) * 10 + "%"
+    }
+    handleLeftRating(){
+        return (10-this.props.results.vote_average).toFixed(1) * 10 + "%"
     }
     render() {
         return (
@@ -45,8 +46,10 @@ class Movie extends React.Component{
                 </div>
                 <div className="details">
                     <div className='title'>
-                        <div className="bar"
-                             style={{width: this.handleRating()}}>{this.props.results.vote_average > 0 ? `${this.handleRating()} Viewers Rating` : null}</div>
+                        <div className="bar" style={{width: this.handleRating()}}>
+                            {this.props.results.vote_average > 0 ? `${this.handleRating()} Viewers Rating` : null}
+                        </div>
+                        <div className="bar-minus" style={{width: this.handleLeftRating()}}>{}</div>
                         <h6>{this.props.tv === 'true' ? this.props.results.name : this.props.results.title} </h6>
                         <span>{this.handleDate()} </span>
                     </div>

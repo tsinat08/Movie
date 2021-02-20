@@ -18,7 +18,7 @@
 }
 
 .title {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     align-items: baseline;
     overflow: hidden;
@@ -69,8 +69,14 @@
     font-size: 14px;
     height: 20px;
     background-color: #eaafaf;
+    display: -webkit-inline-flex;
 }
-
+.bar-minus{
+    font-size: 14px;
+    height: 20px;
+    background-color: #E3E3E3;
+    display: -webkit-inline-flex;
+}
 @media screen and (max-width: 1024px) {
     .movie{
         margin: 1rem 0 1rem 0;
