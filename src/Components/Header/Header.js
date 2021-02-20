@@ -13,7 +13,7 @@ class Header extends React.Component {
                 <table>
                     <tbody>
                     <tr >
-                        <td className="pic"><img src={pic} alt='icon'/></td>
+                        <td className="pic"><img src={pic} alt='icon' width="100" height="100" /></td>
                         <td className="name"><h1>TV & MOVIE SEARCH</h1></td>
                     </tr>
                     </tbody>
