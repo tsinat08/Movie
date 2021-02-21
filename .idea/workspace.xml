@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update Rating scale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -147,13 +149,7 @@
       <workItem from="1612186486855" duration="431000" />
       <workItem from="1613591830123" duration="9107000" />
       <workItem from="1613830138679" duration="934000" />
-    </task>
-    <task id="LOCAL-00102" summary="adding selecting by type">
-      <created>1587425527652</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1587425527652</updated>
+      <workItem from="1613874775474" duration="7977000" />
     </task>
     <task id="LOCAL-00103" summary="adding selecting by type">
       <created>1587614176162</created>
@@ -491,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613873369338</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Update Rating scale">
+      <created>1613874865669</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1613874865669</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

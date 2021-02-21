@@ -6,6 +6,7 @@ class Pagination extends React.Component{
         super(props);
         this.state={
             term: 1,
+
         }
         this.handleClick=this.handleClick.bind(this)
     }
@@ -14,43 +15,47 @@ class Pagination extends React.Component{
         let page=[]
         if(term < 12) {
             for (let i = 1; i <= (term); i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term < 8 && term >=12){
+        }
+        else if(this.state.term < 8 && term >=12){
             for (let i = 1; i <= (8); i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
             page.push(<li key={0}>...</li>);
             for (let i = term -1; i <=term; i++){
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        } else if(this.state.term >=8 && term <= 12){
+        }
+        else if(this.state.term >=8 && term <= 12){
             for (let i = 1; i <= 2; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
             page.push(<li key={term+1}>...</li>);
             for (let i = term-8; i <= term; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term >= 8 && term-this.state.term > 4){
+        }
+        else if(this.state.term >= 8 && term-this.state.term > 4){
             for (let i = 1; i <= 2; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
             page.push(<li key={0}>...</li>);
             for (let i = (this.state.term-3); i <= (this.state.term+3); i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
             page.push(<li key={term+1}>...</li>);
             for (let i = term-1; i <= term; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
-        }else if(this.state.term >= 8 && term-this.state.term <= 4){
+        }
+        else if(this.state.term >= 8 && term-this.state.term <= 4){
             for (let i = 1; i <= 2; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
             page.push(<li key={0}>...</li>);
             for (let i = term-6; i <= term; i++) {
-                page.push(<button className='current' key={i} value={i} onClick={this.handleClick}>{i}</button>)
+                page.push(<button className={`current ${this.state.term===i && 'active'}`} key={i} value={i} onClick={this.handleClick}>{i}</button>)
             }
         }
         return page
@@ -78,7 +83,7 @@ class Pagination extends React.Component{
     }
     handleClick(e){
         let page=parseInt(e.target.value);
-        this.setState({term:page})
+        this.setState({term:page});
         this.props.chooseMoviesPage(page, this.props.resultsType);
     }
     componentDidUpdate(prevProps) {
@@ -94,7 +99,7 @@ class Pagination extends React.Component{
                 <ul className='pages' >
                     {this.state.term > 1 ?
                     <button className='previous' onClick={this.handlePrevious}>←Previous</button> :null}
-                    {this.handleAllPages().term}
+                    <div className="allPages">{this.handleAllPages().term}</div>
                     {this.handleAllPages().count > this.state.term && this.handleAllPages().count !==1?
                     <button className='next' onClick={this.handleNext}>Next→</button>: null}
                 </ul>
