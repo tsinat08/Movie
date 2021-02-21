@@ -22,6 +22,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     overflow: hidden;
+    position: relative;
 }
 
 .title a{
@@ -70,12 +71,17 @@
     height: 20px;
     background-color: #eaafaf;
     display: -webkit-inline-flex;
+
 }
 .bar-minus{
     font-size: 14px;
     height: 20px;
-    background-color: #E3E3E3;
+    background-color: #ffffff;
     display: -webkit-inline-flex;
+}
+.bar-tab{
+    position: absolute;
+    width: 100%;
 }
 @media screen and (max-width: 1024px) {
     .movie{
