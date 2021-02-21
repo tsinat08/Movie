@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="update CSS for iPhone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,13 +148,6 @@
       <workItem from="1612186486855" duration="431000" />
       <workItem from="1613591830123" duration="9107000" />
       <workItem from="1613830138679" duration="934000" />
-    </task>
-    <task id="LOCAL-00100" summary="adding selecting by type">
-      <created>1587306419393</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1587306419393</updated>
     </task>
     <task id="LOCAL-00101" summary="adding selecting by type">
       <created>1587425426530</created>
@@ -493,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613859437439</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="update CSS for iPhone">
+      <created>1613862793014</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1613862793014</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
