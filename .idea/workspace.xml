@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update Pagination">
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update box card size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,14 +150,7 @@
       <workItem from="1613830138679" duration="934000" />
       <workItem from="1613874775474" duration="8653000" />
       <workItem from="1614515654095" duration="199000" />
-      <workItem from="1614518625390" duration="1402000" />
-    </task>
-    <task id="LOCAL-00104" summary="adding selecting by type">
-      <created>1587697734858</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1587697734858</updated>
+      <workItem from="1614518625390" duration="1781000" />
     </task>
     <task id="LOCAL-00105" summary="adding selecting by type">
       <created>1587697751301</created>
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613934330471</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="Update box card size">
+      <created>1614522318141</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1614522318141</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +514,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="and MovieList" />
     <MESSAGE value="fix CSS" />
     <MESSAGE value="fix search button" />
     <MESSAGE value="fixing apikey" />
@@ -539,6 +538,7 @@
     <MESSAGE value="update CSS for iPhone" />
     <MESSAGE value="Update Rating scale" />
     <MESSAGE value="Update Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Pagination" />
+    <MESSAGE value="Update box card size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update box card size" />
   </component>
 </project>
