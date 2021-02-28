@@ -62,7 +62,8 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: scroll;
+    height: 95px;
     margin: 0;
 }
 
