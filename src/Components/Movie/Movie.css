@@ -62,10 +62,13 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 95px;
     margin: 0;
     text-align: justify;
+}
+.details p::-webkit-scrollbar {
+    background: transparent;
 }
 
 .bar{
