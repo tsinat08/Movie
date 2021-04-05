@@ -5,7 +5,7 @@ import Search from '../src/Components/Search/Search';
 import MovieList from "./Components/MovieList/MovieList";
 import SearchResults from '../src/Components/SearchResults/SearchResults';
 import Pagination from "./Components/Pagination/Pagination";
-import {Movies, TV} from './util/movies';
+import {Movies, Trending, TV} from './util/movies';
 
 
 class App extends React.Component{
@@ -17,6 +17,7 @@ class App extends React.Component{
             pageTV:1,
             movies:[],
             tv:[],
+            trending:[],
             loading: true,
             tvTotalPage: '',
             moviesTotalPage: '',
@@ -27,6 +28,7 @@ class App extends React.Component{
         this.searchDatabase=this.searchDatabase.bind(this);
         this.chooseMoviesPage=this.chooseMoviesPage.bind(this);
         this.chooseResultType=this.chooseResultType.bind(this);
+        this.Trending=this.Trending.bind(this);
     }
 
     searchDatabase(term, page, newType) {
@@ -51,7 +53,6 @@ class App extends React.Component{
                         term: term
                     });
                 }
-                ;
             });
     }
     getTV(term, page){
@@ -67,6 +68,18 @@ class App extends React.Component{
                     });
                 }
             });
+    }
+    Trending(){
+        Trending.search.then(data => data.json())
+            .then(data => {
+                if (data) {
+                    this.setState({
+                        trending: data,
+                        loading: true,
+                    });
+                }
+            });
+        console.log(this.state.trending)
     }
     chooseMoviesPage(newPage, newType){
         if(newType === "Movies") {
@@ -90,7 +103,7 @@ class App extends React.Component{
         return (
             <div className="App">
                 <div className="headers">
-                    <Header/>
+                    <Header Trending={this.Trending}/>
                     <Search searchDatabase={this.searchDatabase}/>
                 </div>
                 <div className='list'>
@@ -109,9 +122,3 @@ class App extends React.Component{
 }
 
 export default App;
-/*
-currentPageMovie={this.state.pageMovie}
-                                   currentPageTV={this.state.pageTV} moviesTotalPage={this.state.moviesTotalPage}
-                                   chooseMoviesPage={this.chooseMoviesPage} tvTotalPage={this.state.tvTotalPage}
-                                   resultsType={this.state.resultsType}
- */

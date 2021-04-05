@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update box card size">
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update box scroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/movies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update_CSS_for_Iphone" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,14 +154,9 @@
       <workItem from="1613874775474" duration="8653000" />
       <workItem from="1614515654095" duration="199000" />
       <workItem from="1614518625390" duration="3834000" />
-      <workItem from="1615601445915" duration="602000" />
-    </task>
-    <task id="LOCAL-00108" summary="adding selecting by type">
-      <created>1588011933813</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1588011933813</updated>
+      <workItem from="1615601445915" duration="1166000" />
+      <workItem from="1617230054600" duration="227000" />
+      <workItem from="1617403582507" duration="7102000" />
     </task>
     <task id="LOCAL-00109" summary="edit Pagination">
       <created>1588188634196</created>
@@ -496,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614532223650</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Update box scroll">
+      <created>1615665328638</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1615665328639</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +520,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix CSS" />
     <MESSAGE value="fix search button" />
     <MESSAGE value="fixing apikey" />
     <MESSAGE value="fixing css" />
@@ -540,6 +544,7 @@
     <MESSAGE value="Update Rating scale" />
     <MESSAGE value="Update Pagination" />
     <MESSAGE value="Update box card size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update box card size" />
+    <MESSAGE value="Update box scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update box scroll" />
   </component>
 </project>
