@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
- import pic from './movieIcon.jpg'
+import pic from './movieIcon.jpg'
 
 
 class Header extends React.Component {

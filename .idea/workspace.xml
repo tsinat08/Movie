@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Update box scroll">
+    <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="update header">
+      <change afterPath="$PROJECT_DIR$/src/Components/Home/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Movie/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -156,14 +159,9 @@
       <workItem from="1614518625390" duration="3834000" />
       <workItem from="1615601445915" duration="1166000" />
       <workItem from="1617230054600" duration="227000" />
-      <workItem from="1617403582507" duration="7102000" />
-    </task>
-    <task id="LOCAL-00109" summary="edit Pagination">
-      <created>1588188634196</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1588188634197</updated>
+      <workItem from="1617403582507" duration="9273000" />
+      <workItem from="1617846927152" duration="1087000" />
+      <workItem from="1617891538302" duration="4475000" />
     </task>
     <task id="LOCAL-00110" summary="edit Pagination">
       <created>1588210558932</created>
@@ -501,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615665328639</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="update header">
+      <created>1617581928928</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1617581928929</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix search button" />
     <MESSAGE value="fixing apikey" />
     <MESSAGE value="fixing css" />
     <MESSAGE value="fixing error with poster path === null" />
@@ -545,6 +549,7 @@
     <MESSAGE value="Update Pagination" />
     <MESSAGE value="Update box card size" />
     <MESSAGE value="Update box scroll" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update box scroll" />
+    <MESSAGE value="update header" />
+    <option name="LAST_COMMIT_MESSAGE" value="update header" />
   </component>
 </project>

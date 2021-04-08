@@ -41,8 +41,7 @@ class Movie extends React.Component{
         return (
             <div className="movie">
                 <div className="image-container">
-                    <img src={this.handleImage()}
-                         alt={`${this.props.results.title}`}/>
+                    <img src={this.handleImage()} alt={`${this.props.results.title}`}/>
                 </div>
                 <div className="details">
                     <div className='title'>
