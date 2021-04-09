@@ -1,3 +1,12 @@
+div.anchor a{
+    font-size: 12 px;
+    outline: none;
+    border: 0;
+    border-inline: 0;
+    text-decoration: none ;
+
+
+}
 div.column_header{
     display: flex;
 }
