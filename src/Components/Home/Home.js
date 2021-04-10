@@ -5,7 +5,7 @@ import pic from './test.jpeg';
 class Home extends React.Component {
     render() {
         return (
-            <div>
+            <div className='content_wrapper'>
                 <div className='column_header'>
                     <h2>What's Popular</h2>
                     <div className='selector_wrap'>
