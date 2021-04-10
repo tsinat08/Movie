@@ -117,7 +117,10 @@ class App extends React.Component {
                                             currentPage={this.state.page}/>
                             <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType}
                                        loading={this.state.loading}/></div> :
-                        <Home/>
+                        <div>
+                            <Home/>
+                            <Home/>
+                        </div>
                     }
                 <div className='pagination'>
                     <Pagination currentPageMovie={this.state.pageMovie} currentPageTV={this.state.pageTV}

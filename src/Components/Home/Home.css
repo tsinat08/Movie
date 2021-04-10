@@ -42,6 +42,7 @@ div.column_header h2{
     font-size: 15px;
     color: inherit;
     font-weight: 500;
+    background-color: rgb(227,227,227);
 }
 
 .home{
