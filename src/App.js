@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from "./Components/Home/Home";
+import Home2 from "./Components/Home/Home2";
 import Header from '../src/Components/Header/Header';
 import Search from '../src/Components/Search/Search';
 import MovieList from "./Components/MovieList/MovieList";
@@ -119,7 +120,7 @@ class App extends React.Component {
                                        loading={this.state.loading}/></div> :
                         <div>
                             <Home/>
-                            <Home/>
+                            <Home2/>
                         </div>
                     }
                 <div className='pagination'>
