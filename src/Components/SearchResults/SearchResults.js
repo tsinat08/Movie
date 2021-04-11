@@ -14,10 +14,12 @@ class SearchResults extends React.Component {
     handleClick(e) {
         let type= e.target.getAttribute('value'),
             divs= document.querySelectorAll('.select');
+
         divs.forEach(div=>{
             if (div.classList.contains('selected')) div.classList.remove('selected')
         })
         e.target.classList.add('selected');
+
         if((type ==='Movies' && this.props.moviesCount > 0) || (type==='TV Shows' && this.props.tvCount > 0)){
             this.props.chooseResultType(type);
         }

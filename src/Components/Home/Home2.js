@@ -3,6 +3,19 @@ import './Home.css';
 import pic from './test.jpeg';
 
 class Home2 extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClick=this.handleClick.bind  (this)
+    }
+    handleClick(e){
+        let divs= document.querySelectorAll('.anchor');
+        divs.forEach(div=>{
+            if (div.classList.contains('selected')) div.classList.remove('selected')
+        })
+        e.target.classList.add('selected');
+    }
+
     render() {
         return (
             <div className='content_wrapper'>
@@ -10,11 +23,8 @@ class Home2 extends React.Component {
                     <h2>Trending</h2>
                     <div className='selector_wrap'>
                         <div className='selector'>
-                            <div className='anchor'><h3><a href='index.html' >Today</a></h3>
-                                <div className='background'></div></div>
-                            <div className='anchor'><h3><a href='index.html' >This Week</a></h3>
-                                <div className='background'></div></div>
-
+                            <a className='anchor' onClick={this.handleClick} href='#' >Today</a>
+                            <a className='anchor' onClick={this.handleClick} href='#'>This Week</a>
                         </div>
                     </div>
                 </div>

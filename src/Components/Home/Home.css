@@ -5,7 +5,7 @@ div.anchor {
     color: black;
 }
 
-div.anchor a{
+a.anchor{
     font-size: 1rem;
     outline: none;
     border: 0;
@@ -13,7 +13,13 @@ div.anchor a{
     text-decoration: none ;
     color: inherit;
     font-weight: 600;
-    padding: 15px;
+    padding: 7px 15px;
+}
+
+a.selected{
+    border-radius: 54px;
+    background-color: rgb(158, 101, 105);
+    text-align: center;
 }
 
 div.column_header{
