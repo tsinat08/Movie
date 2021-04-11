@@ -10,13 +10,13 @@ class Home extends React.Component {
                     <h2>What's Popular</h2>
                     <div className='selector_wrap'>
                         <div className='selector'>
-                            <div className='anchor'><h3><a href='#' >Streaming</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >Streaming</a></h3>
                                 <div className='background'></div></div>
-                            <div className='anchor'><h3><a href='#' >On TV</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >On TV</a></h3>
                                 <div className='background'></div></div>
-                            <div className='anchor'><h3><a href='#' >For Rent</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >For Rent</a></h3>
                                 <div className='background'></div></div>
-                            <div className='anchor'><h3><a href='#' >In Theaters</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >In Theaters</a></h3>
                                 <div className='background'></div></div>
                         </div>
                     </div>

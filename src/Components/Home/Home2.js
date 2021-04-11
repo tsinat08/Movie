@@ -10,9 +10,9 @@ class Home2 extends React.Component {
                     <h2>Trending</h2>
                     <div className='selector_wrap'>
                         <div className='selector'>
-                            <div className='anchor'><h3><a href='#' >Today</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >Today</a></h3>
                                 <div className='background'></div></div>
-                            <div className='anchor'><h3><a href='#' >This Week</a></h3>
+                            <div className='anchor'><h3><a href='index.html' >This Week</a></h3>
                                 <div className='background'></div></div>
 
                         </div>
