@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Adding Home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Home2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,14 +165,7 @@
       <workItem from="1617403582507" duration="9273000" />
       <workItem from="1617846927152" duration="1087000" />
       <workItem from="1617891538302" duration="8965000" />
-      <workItem from="1618062191514" duration="9495000" />
-    </task>
-    <task id="LOCAL-00120" summary="edit Pagination">
-      <created>1588728518127</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1588728518127</updated>
+      <workItem from="1618062191514" duration="10723000" />
     </task>
     <task id="LOCAL-00121" summary="edit Pagination">
       <created>1588729796280</created>
@@ -514,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618144031265</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Adding Home">
+      <created>1618153812432</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1618153812432</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +529,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing css" />
     <MESSAGE value="fixing error with poster path === null" />
     <MESSAGE value="fixing error with overview === null" />
     <MESSAGE value="add TV search" />
@@ -558,6 +553,7 @@
     <MESSAGE value="Update box scroll" />
     <MESSAGE value="update header" />
     <MESSAGE value="Adding Home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Home" />
+    <MESSAGE value="update home2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update home2" />
   </component>
 </project>
