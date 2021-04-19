@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Adding Home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,14 +164,7 @@
       <workItem from="1617403582507" duration="9273000" />
       <workItem from="1617846927152" duration="1087000" />
       <workItem from="1617891538302" duration="8965000" />
-      <workItem from="1618062191514" duration="10723000" />
-    </task>
-    <task id="LOCAL-00121" summary="edit Pagination">
-      <created>1588729796280</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1588729796281</updated>
+      <workItem from="1618062191514" duration="13120000" />
     </task>
     <task id="LOCAL-00122" summary="edit Pagination">
       <created>1588730430095</created>
@@ -510,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618153812432</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="update home2">
+      <created>1618389653172</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1618389653173</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
