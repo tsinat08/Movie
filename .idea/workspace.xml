@@ -164,14 +164,10 @@
       <workItem from="1617403582507" duration="9273000" />
       <workItem from="1617846927152" duration="1087000" />
       <workItem from="1617891538302" duration="8965000" />
-      <workItem from="1618062191514" duration="13120000" />
-    </task>
-    <task id="LOCAL-00122" summary="edit Pagination">
-      <created>1588730430095</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1588730430095</updated>
+      <workItem from="1618062191514" duration="13941000" />
+      <workItem from="1619139056256" duration="60000" />
+      <workItem from="1619139161919" duration="553000" />
+      <workItem from="1619622257951" duration="1984000" />
     </task>
     <task id="LOCAL-00123" summary="edit Pagination">
       <created>1588871241549</created>
@@ -509,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618389653173</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Adding Home">
+      <created>1618872935350</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1618872935350</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,8 +554,8 @@
     <MESSAGE value="Update box card size" />
     <MESSAGE value="Update box scroll" />
     <MESSAGE value="update header" />
-    <MESSAGE value="Adding Home" />
     <MESSAGE value="update home2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update home2" />
+    <MESSAGE value="Adding Home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Home" />
   </component>
 </project>
