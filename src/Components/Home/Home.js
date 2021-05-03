@@ -23,10 +23,8 @@ class Home extends React.Component {
                     <h2>What's Popular</h2>
                     <div className='selector_wrap'>
                         <div className='selector'>
-                            <a className='anchor' onClick={this.handleClick} href='#' >Streaming</a>
-                            <a className='anchor' onClick={this.handleClick} href='#' >On TV</a>
-                            <a className='anchor' onClick={this.handleClick} href='#' >For Rent</a>
-                            <a className='anchor' onClick={this.handleClick} href='#' >In Theaters</a>
+                            <a className='anchor' onClick={this.handleClick} href='#' >Movie</a>
+                            <a className='anchor' onClick={this.handleClick} href='#' >TV Shows</a>
                         </div>
                     </div>
                 </div>
