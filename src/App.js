@@ -7,7 +7,7 @@ import Search from '../src/Components/Search/Search';
 import MovieList from "./Components/MovieList/MovieList";
 import SearchResults from '../src/Components/SearchResults/SearchResults';
 import Pagination from "./Components/Pagination/Pagination";
-import {Movies, Trending, TV} from './util/movies';
+import {Movies, Trending, TV, MoviesPopular, TVPopular} from './util/movies';
 
 
 class App extends React.Component {
@@ -18,7 +18,9 @@ class App extends React.Component {
             pageMovie: 1,
             pageTV: 1,
             movies: [],
+            moviesPopular: [],
             tv: [],
+            tvPopular: [],
             trending: [],
             loading: true,
             tvTotalPage: '',
@@ -84,7 +86,33 @@ class App extends React.Component {
                     });
                 }
             });
-        console.log(this.state.trending)
+        console.log("trending:   ",this.state.trending)
+    }
+
+    MoviePopular() {
+        MoviesPopular.search.then(data => data.json())
+            .then(data => {
+                if (data) {
+                    this.setState({
+                        moviePopular: data,
+                        loading: true,
+                    });
+                }
+            });
+        console.log("Movie:  ", this.state.moviePopular)
+    }
+
+    TVPopular() {
+        TVPopular.search.then(data => data.json())
+            .then(data => {
+                if (data) {
+                    this.setState({
+                        tvPopular: data,
+                        loading: true,
+                    });
+                }
+            });
+        console.log("TV:   ", this.state.tvPopular)
     }
 
     chooseMoviesPage(newPage, newType) {
@@ -119,8 +147,8 @@ class App extends React.Component {
                             <MovieList movies={this.state.movies} tv={this.state.tv} resultType={this.state.resultsType}
                                        loading={this.state.loading}/></div> :
                         <div>
-                            <Home/>
-                            <Home2/>
+                            <Home moviesPopular={this.state.moviePopular} tvPopular={this.state.tvPopular}/>
+                            <Home2 trending={this.state.trending}/>
                         </div>
                     }
                 <div className='pagination'>

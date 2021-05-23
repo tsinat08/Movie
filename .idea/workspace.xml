@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8d78399d-41fe-4303-aa91-bb889e78ff21" name="Default Changelist" comment="Adding Home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/movies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,14 +171,13 @@
       <workItem from="1619139056256" duration="60000" />
       <workItem from="1619139161919" duration="553000" />
       <workItem from="1619622257951" duration="2512000" />
-      <workItem from="1619979001101" duration="410000" />
-    </task>
-    <task id="LOCAL-00124" summary="edit Pagination">
-      <created>1588871274459</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1588871274459</updated>
+      <workItem from="1619979001101" duration="564000" />
+      <workItem from="1620008741695" duration="3006000" />
+      <workItem from="1620659144975" duration="179000" />
+      <workItem from="1620677833140" duration="2007000" />
+      <workItem from="1620940749734" duration="180000" />
+      <workItem from="1621461825030" duration="444000" />
+      <workItem from="1621554730664" duration="1075000" />
     </task>
     <task id="LOCAL-00125" summary="edit Pagination">
       <created>1589062580207</created>
@@ -514,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619888447112</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Adding Home">
+      <created>1620008442957</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1620008442957</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

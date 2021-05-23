@@ -17,6 +17,7 @@ class Home extends React.Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className='content_wrapper'>
                 <div className='column_header'>
